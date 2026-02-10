@@ -74,7 +74,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100">
+        <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <a

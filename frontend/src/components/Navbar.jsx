@@ -42,12 +42,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-12">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-[#D32F2F] font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-[#D32F2F] font-medium transition-colors duration-200 text-base"
               >
                 {link.name}
               </a>

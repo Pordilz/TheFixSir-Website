@@ -99,9 +99,8 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin className="text-[#D32F2F] flex-shrink-0 mt-1" size={18} />
                 <div>
-                  <p className="text-sm text-gray-500">Event Location</p>
+                  <p className="text-sm text-gray-500">Location</p>
                   <p className="text-gray-300">
-                    15 Everest Road<br />
                     Musgrave, Durban
                   </p>
                 </div>

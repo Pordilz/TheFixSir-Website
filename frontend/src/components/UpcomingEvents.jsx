@@ -50,8 +50,8 @@ const UpcomingEvents = () => {
             <div className="flex items-center space-x-3">
               <MapPin size={32} />
               <div className="text-left">
-                <p className="font-semibold text-lg">Coming to Stanger</p>
-                <p className="text-white/90">15 Everest Road, Stanger Heights</p>
+                <p className="font-semibold text-lg">Coming to Musgrave, Durban</p>
+                <p className="text-white/90">15 Everest Road, Musgrave</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">
@@ -60,6 +60,9 @@ const UpcomingEvents = () => {
                 <p className="font-semibold text-lg">Hijama Only</p>
                 <p className="text-white/90">Wet/Dry Cupping Available</p>
               </div>
+            </div>
+            <div className="bg-black/30 px-6 py-3 rounded-full font-bold text-lg">
+              Males Only
             </div>
           </div>
         </div>

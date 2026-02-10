@@ -18,7 +18,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">The FixSir</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Professional mobile sports massage and Hijama therapy services. Bringing recovery, relief, and revitalization directly to your doorstep in Stanger and surrounding areas.
+              Professional mobile sports massage and Hijama therapy services. Bringing recovery, relief, and revitalization directly to your doorstep in Musgrave, Durban and surrounding areas.
             </p>
             <div className="flex space-x-4">
               <a

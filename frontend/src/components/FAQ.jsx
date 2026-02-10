@@ -7,7 +7,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: 'What areas do you serve?',
-      answer: 'We primarily serve Stanger and surrounding areas in KwaZulu-Natal. Call-out fees of R100-R150 apply depending on your location. Contact us to confirm if we service your area.',
+      answer: 'We primarily serve Musgrave, Durban and surrounding areas in KwaZulu-Natal. Call-out fees of R100-R150 apply depending on your location. Contact us to confirm if we service your area.',
     },
     {
       question: 'Is Hijama safe and hygienic?',

@@ -102,7 +102,7 @@ const Footer = () => {
                   <p className="text-sm text-gray-500">Event Location</p>
                   <p className="text-gray-300">
                     15 Everest Road<br />
-                    Stanger Heights
+                    Musgrave, Durban
                   </p>
                 </div>
               </li>

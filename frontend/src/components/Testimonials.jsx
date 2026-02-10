@@ -5,21 +5,21 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: 'Ahmed K.',
-      location: 'Stanger',
+      location: 'Musgrave, Durban',
       rating: 5,
       text: 'Excellent service! The sports massage really helped with my shoulder pain. Professional therapist who came right to my home. Highly recommend!',
       service: 'Sports Massage',
     },
     {
       name: 'Yusuf M.',
-      location: 'Durban',
+      location: 'Durban North',
       rating: 5,
       text: 'Best Hijama experience I\'ve had. Very professional, clean, and follows proper Sunnah practices. The mobile service made it so convenient.',
       service: 'Hijama Therapy',
     },
     {
       name: 'Ibrahim S.',
-      location: 'Stanger Heights',
+      location: 'Berea, Durban',
       rating: 5,
       text: 'Had the combo deal - massage and cupping. Fantastic value and amazing results. My back pain is completely gone. Will definitely book again!',
       service: 'Combo Deal',

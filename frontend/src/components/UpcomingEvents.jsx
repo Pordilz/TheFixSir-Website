@@ -51,7 +51,7 @@ const UpcomingEvents = () => {
               <MapPin size={32} />
               <div className="text-left">
                 <p className="font-semibold text-lg">Coming to Musgrave, Durban</p>
-                <p className="text-white/90">15 Everest Road, Musgrave</p>
+                <p className="text-white/90">Mobile Service Available</p>
               </div>
             </div>
             <div className="flex items-center space-x-3">

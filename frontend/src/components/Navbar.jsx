@@ -42,21 +42,25 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-12">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-gray-700 hover:text-[#D32F2F] font-medium transition-colors duration-200 text-base"
-              >
-                {link.name}
-              </a>
+          <div className="hidden lg:flex items-center">
+            {navLinks.map((link, index) => (
+              <React.Fragment key={link.name}>
+                <a
+                  href={link.href}
+                  className="px-5 py-2 text-gray-700 hover:text-[#D32F2F] font-medium transition-colors duration-200 text-base"
+                >
+                  {link.name}
+                </a>
+                {index < navLinks.length - 1 && (
+                  <span className="text-gray-300">|</span>
+                )}
+              </React.Fragment>
             ))}
             <a
               href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#D32F2F] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#B71C1C] transition-all duration-200 hover:shadow-lg"
+              className="ml-8 bg-[#D32F2F] text-white px-6 py-2.5 rounded-full font-semibold hover:bg-[#B71C1C] transition-all duration-200 hover:shadow-lg"
             >
               Book Now
             </a>

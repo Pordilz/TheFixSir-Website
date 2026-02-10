@@ -15,8 +15,11 @@ const Hero = () => {
                 <span className="text-[#D32F2F]"> Hijama Therapy</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Recovery, Relief, and Revitalization at your doorstep. Serving Stanger and surrounding areas.
+                Recovery, Relief, and Revitalization at your doorstep. Serving Musgrave, Durban and surrounding areas.
               </p>
+              <div className="inline-block bg-black text-white px-6 py-2 rounded-full font-semibold mt-4">
+                Males Only Service
+              </div>
             </div>
 
             {/* CTA Buttons */}

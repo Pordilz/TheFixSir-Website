@@ -38,11 +38,15 @@ const About = () => {
 
             <div className="space-y-4 pt-4">
               <p className="text-lg text-gray-700 leading-relaxed">
-                At The FixSir, we combine traditional Sunnah-compliant healing practices with modern sports therapy techniques. Our mobile service brings professional treatment directly to your home, ensuring comfort and convenience.
+                At The FixSir, we combine traditional Sunnah-compliant healing practices with modern sports therapy techniques. Our mobile service brings professional treatment directly to your home in Musgrave, Durban and surrounding areas, ensuring comfort and convenience.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 We specialize in sports massage, deep tissue therapy, Hijama (wet and dry cupping), and injury taping, providing comprehensive care for recovery and revitalization.
               </p>
+              <div className="bg-black text-white p-4 rounded-xl mt-4">
+                <p className="font-bold text-lg mb-1">⚠️ Males Only Service</p>
+                <p className="text-sm text-gray-300">Alternative female therapists available upon request</p>
+              </div>
             </div>
 
             {/* Trust badges */}

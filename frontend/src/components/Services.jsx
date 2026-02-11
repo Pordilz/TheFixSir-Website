@@ -10,8 +10,6 @@ const Services = () => {
       duration: 'Full Body',
       description: 'Neck, Shoulders, Arms, Chest, Back, Glute Release, Legs, Feet (2.5+ hrs)',
       price: 'R1000',
-      special: 'R900',
-      badge: 'Special',
     },
   ];
 

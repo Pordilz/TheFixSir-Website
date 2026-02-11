@@ -4,29 +4,13 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '6th Feb',
-      shaaban: '17th Sha\'baan',
-      day: 'Friday',
-      service: 'Hijama/Wet Cupping Only',
-      price: 'R350-R400',
-      cups: '8 cups max',
-    },
-    {
-      date: '8th Feb',
-      shaaban: '19th Sha\'baan',
-      day: 'Sunday',
-      service: 'Hijama/Wet Cupping Only',
+      date: 'March',
+      shaaban: 'Ramadaan',
+      day: 'TBC',
+      service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
-    },
-    {
-      date: '10th Feb',
-      shaaban: '21st Sha\'baan',
-      day: 'Tuesday',
-      service: 'Hijama/Wet Cupping Only',
-      price: 'R350-R400',
-      cups: '8 cups max',
     },
   ];
 
@@ -39,7 +23,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Sunnah / Preferred Cupping Dates - Limited Slots Available
+            Sunnah / Preferred Cupping Dates - Dependent on Moon Sighting
           </p>
           <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
         </div>
@@ -72,16 +56,15 @@ const UpcomingEvents = () => {
           {events.map((event, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${
-                event.featured ? 'ring-4 ring-[#D32F2F]' : ''
-              }`}
+              className={`relative bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${event.featured ? 'ring-4 ring-[#D32F2F]' : ''
+                }`}
             >
               {event.featured && (
                 <div className="absolute top-0 right-0 bg-[#D32F2F] text-white px-6 py-2 rounded-bl-2xl font-semibold text-sm">
                   FEATURED
                 </div>
               )}
-              
+
               <div className="p-8">
                 {/* Date Header */}
                 <div className="bg-gray-50 rounded-2xl p-6 mb-6 text-center">

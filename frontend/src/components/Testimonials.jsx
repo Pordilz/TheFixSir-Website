@@ -1,28 +1,50 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Ahmed K.',
-      location: 'Musgrave, Durban',
+      name: 'Piet Wiersma (Nedbank Running Club)',
+      location: '2024 Comrades Marathon Winner',
       rating: 5,
-      text: 'Excellent service! The sports massage really helped with my shoulder pain. Professional therapist who came right to my home. Highly recommend!',
+      text: 'Thanks again Mo!! I bet the massage gave me that edge ;)',
       service: 'Sports Massage',
     },
     {
-      name: 'Yusuf M.',
-      location: 'Durban North',
+      name: 'Zakariya Suder',
+      location: 'Client',
       rating: 5,
-      text: 'Best Hijama experience I\'ve had. Very professional, clean, and follows proper Sunnah practices. The mobile service made it so convenient.',
+      text: 'A very special thank you to Muhammed for the most professional experience. I was struggling with lower back and persistent sciatica pain... The cupping along my back and even on my head brought on a complete sense of calmness... I highly recommend you try it.',
+      service: 'Combo Deal',
+    },
+    {
+      name: 'Umeir Samad',
+      location: 'Brazilian Jiu Jiutsu Trainee',
+      rating: 5,
+      text: 'What differentiates the Fixsir from others in his field is the interactive questioning before the treatment... It\'s a great feeling after a session with Muhammed.',
+      service: 'Sports Massage & Cupping',
+    },
+    {
+      name: 'Asad Carrim',
+      location: 'Client',
+      rating: 5,
+      text: 'Much appreciated Mo. No pain or sores at all post hijama treatment. Trained this morning.',
       service: 'Hijama Therapy',
     },
     {
-      name: 'Ibrahim S.',
-      location: 'Berea, Durban',
+      name: 'Novarr Pillay',
+      location: 'DHS Rugby Team Physio',
       rating: 5,
-      text: 'Had the combo deal - massage and cupping. Fantastic value and amazing results. My back pain is completely gone. Will definitely book again!',
-      service: 'Combo Deal',
+      text: 'Coaching staff and team members continue to praise you guys... and are believing that it\'s the hard work of you guys that have been giving us our winning streak 😂',
+      service: 'Sports Massage',
     },
   ];
 
@@ -40,39 +62,51 @@ const Testimonials = () => {
           <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-3xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 relative"
-            >
-              <Quote className="absolute top-6 right-6 text-[#D32F2F] opacity-20" size={40} />
-              
-              {/* Rating */}
-              <div className="flex items-center space-x-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="text-amber-400 fill-amber-400" size={20} />
-                ))}
-              </div>
+        {/* Testimonials Carousel */}
+        <div className="relative px-12">
+          <Carousel
+            plugins={[
+              Autoplay({
+                delay: 5000,
+              }),
+            ]}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-4">
+                  <div className="bg-white rounded-3xl shadow-lg p-8 h-full flex flex-col relative hover:shadow-xl transition-all duration-300">
+                    <Quote className="absolute top-6 right-6 text-[#D32F2F] opacity-20" size={40} />
 
-              {/* Text */}
-              <p className="text-gray-700 mb-6 leading-relaxed italic">
-                "{testimonial.text}"
-              </p>
+                    {/* Rating */}
+                    <div className="flex items-center space-x-1 mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="text-amber-400 fill-amber-400" size={20} />
+                      ))}
+                    </div>
 
-              {/* Author */}
-              <div className="border-t border-gray-200 pt-4">
-                <p className="font-bold text-black">{testimonial.name}</p>
-                <p className="text-sm text-gray-600">{testimonial.location}</p>
-                <div className="mt-2">
-                  <span className="inline-block bg-[#D32F2F]/10 text-[#D32F2F] px-3 py-1 rounded-full text-xs font-semibold">
-                    {testimonial.service}
-                  </span>
-                </div>
-              </div>
-            </div>
-          ))}
+                    {/* Text */}
+                    <p className="text-gray-700 mb-6 leading-relaxed italic flex-grow">
+                      "{testimonial.text}"
+                    </p>
+
+                    {/* Author */}
+                    <div className="border-t border-gray-200 pt-4 mt-auto">
+                      <p className="font-bold text-black">{testimonial.name}</p>
+                      <p className="text-sm text-gray-600">{testimonial.location}</p>
+                      <div className="mt-2">
+                        <span className="inline-block bg-[#D32F2F]/10 text-[#D32F2F] px-3 py-1 rounded-full text-xs font-semibold">
+                          {testimonial.service}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
 
         {/* CTA */}

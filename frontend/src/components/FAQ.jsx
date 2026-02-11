@@ -22,8 +22,8 @@ const FAQ = () => {
       answer: 'You can book via WhatsApp by clicking any "Book Now" button on this website, or call us directly at 064 890 6906 for males or 082 882 7865 for female referrals.',
     },
     {
-      question: 'What should I prepare for a home session?',
-      answer: 'Simply ensure you have a comfortable space with a bed or massage table, towels, and privacy. We bring all professional equipment and supplies needed for your treatment.',
+      question: 'What is required for the session?',
+      answer: 'Simply ensure you have 2 normal-sized bath towels available. We bring everything else including the massage bed, oils, cups, sprays, and expert care.',
     },
     {
       question: 'Can I combine multiple services?',
@@ -31,7 +31,7 @@ const FAQ = () => {
     },
     {
       question: 'What payment methods do you accept?',
-      answer: 'We accept cash, EFT, and major electronic payment methods. Payment is due at the time of service. Please confirm your preferred payment method when booking.',
+      answer: 'We accept Cash or EFT currently. Payment is due at the time of service.',
     },
     {
       question: 'What is the cancellation policy?',

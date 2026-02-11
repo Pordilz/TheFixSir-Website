@@ -21,15 +21,11 @@ const Footer = () => {
               Professional mobile sports massage and Hijama therapy services. Bringing recovery, relief, and revitalization directly to your doorstep in Musgrave, Durban and surrounding areas.
             </p>
             <div className="flex space-x-4">
+
               <a
-                href="#"
-                className="p-2 bg-white/10 rounded-lg hover:bg-[#D32F2F] transition-colors duration-200"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
+                href="https://www.instagram.com/thefixsir.sa?igsh=Y2h2NncxeW9pdzJw"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 bg-white/10 rounded-lg hover:bg-[#D32F2F] transition-colors duration-200"
                 aria-label="Instagram"
               >
@@ -132,6 +128,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
               © {new Date().getFullYear()} The FixSir. All rights reserved.
+              <span className="hidden md:inline mx-2">|</span>
+              <span className="block md:inline mt-1 md:mt-0">Developed by Qroma</span>
             </p>
             <div className="flex items-center space-x-6 text-sm text-gray-500">
               <a href="#" className="hover:text-[#D32F2F] transition-colors">

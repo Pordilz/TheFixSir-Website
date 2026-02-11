@@ -10,14 +10,13 @@ const Hero = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold text-black leading-tight">
-                Professional Mobile
-                <span className="text-[#D32F2F]"> Sports Massage</span> &
-                <span className="text-[#D32F2F]"> Hijama Therapy</span>
+                Professional
+                <span className="text-[#D32F2F]"> Recovery Therapy</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Recovery, Relief, and Revitalization at your doorstep. Serving Musgrave, Durban and surrounding areas.
+                Recovery, Relief, and Revitalization in the comfort of your own home or visit us at our calm oasis away from the hustle and bustle of everyday life. Serving Musgrave, Durban and surrounding areas.
               </p>
-              <div className="inline-block bg-black text-white px-6 py-2 rounded-full font-semibold mt-4">
+              <div className="inline-block bg-black text-white px-6 py-2 rounded-full font-semibold mt-4 mb-4">
                 Males Only Service
               </div>
             </div>
@@ -48,7 +47,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-black">Mobile Service</p>
-                  <p className="text-sm text-gray-600">We come to you</p>
+                  <p className="text-sm text-gray-600">We come to you + Practice in Musgrave</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -77,7 +76,7 @@ const Hero = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src="https://images.unsplash.com/photo-1745327883508-b6cd32e5dde5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBtYXNzYWdlfGVufDB8fHx8MTc3MDc0NzMwMHww&ixlib=rb-4.1.0&q=85"
-                alt="Professional Sports Massage"
+                alt="Professional Sports Massage Therapy Session in Durban"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>

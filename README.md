@@ -8,7 +8,7 @@ This project is a modern, responsive web application built to showcase services,
 
 ## 🚀 Live Demo
 
-[View Live Site](https://thefixsir.co.za/)
+tbc
 
 ## ✨ Features
 

@@ -28,9 +28,9 @@ const Services = () => {
   ];
 
   const comboDeal = {
-    name: '1 Hour Sports Massage + Wet/Hijama Cupping',
+    name: '1 Hour Sports Massage + Sunnah/Hijama Cupping',
     description: 'Up to 8 cups',
-    price: 'R700',
+    price: 'R750',
   };
 
   return (

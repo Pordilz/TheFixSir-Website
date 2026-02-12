@@ -132,10 +132,10 @@ const Footer = () => {
               <span className="block md:inline mt-1 md:mt-0">Developed by Qroma</span>
             </p>
             <div className="flex items-center space-x-6 text-sm text-gray-500">
-              <a href="#" className="hover:text-[#D32F2F] transition-colors">
+              <a href="/privacy" className="hover:text-[#D32F2F] transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-[#D32F2F] transition-colors">
+              <a href="/terms" className="hover:text-[#D32F2F] transition-colors">
                 Terms of Service
               </a>
             </div>

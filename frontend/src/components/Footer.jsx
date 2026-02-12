@@ -1,7 +1,9 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
+  const location = useLocation();
   return (
     <footer id="contact" className="bg-black text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,22 +50,22 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
+                <a href={location.pathname === '/' ? '#home' : '/'} className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
+                <a href={location.pathname === '/' ? '#about' : '/#about'} className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
+                <a href={location.pathname === '/' ? '#services' : '/#services'} className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
                   Services & Pricing
                 </a>
               </li>
               <li>
-                <a href="#events" className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
+                <a href={location.pathname === '/' ? '#events' : '/#events'} className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
                   Upcoming Events
                 </a>
               </li>

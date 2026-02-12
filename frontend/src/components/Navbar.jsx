@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,15 +25,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#home" className="flex items-center space-x-3">
+            <a href={location.pathname === '/' ? '#home' : '/'} className="flex items-center space-x-3">
               <img
                 src="https://customer-assets.emergentagent.com/job_e6936146-32b4-41d1-9215-4616bacb2820/artifacts/311cz3q0_PHOTO-2026-02-10-19-55-21.jpg"
                 alt="The FixSir Logo"
@@ -46,7 +47,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <React.Fragment key={link.name}>
                 <a
-                  href={link.href}
+                  href={location.pathname === '/' ? link.href : `/${link.href}`}
                   className="px-5 py-2 text-gray-700 hover:text-[#D32F2F] font-medium transition-colors duration-200 text-base"
                 >
                   {link.name}
@@ -83,7 +84,7 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
+                href={location.pathname === '/' ? link.href : `/${link.href}`}
                 onClick={() => setIsOpen(false)}
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-lg font-medium"
               >

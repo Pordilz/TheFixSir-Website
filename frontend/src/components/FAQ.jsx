@@ -27,7 +27,7 @@ const FAQ = () => {
     },
     {
       question: 'Can I combine multiple services?',
-      answer: 'Yes! We offer a popular combo deal: 1 Hour Sports Massage + Wet Cupping for R700. You can also customize your treatment based on your needs.',
+      answer: 'Yes! We offer a popular combo deal: 1 Hour Sports Massage + Wet Cupping for R750. You can also customize your treatment based on your needs.',
     },
     {
       question: 'What payment methods do you accept?',

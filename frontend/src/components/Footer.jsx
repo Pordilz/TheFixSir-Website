@@ -18,7 +18,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">The FixSir</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Professional mobile sports massage and Hijama therapy services. Bringing recovery, relief, and revitalization directly to your doorstep in Musgrave, Durban and surrounding areas.
+              Recovery, Relief, and Revitalization. Experience professional therapy in the comfort of your own home with our mobile service, or visit our private practice in Musgrave, Durban.
             </p>
             <div className="flex space-x-4">
 

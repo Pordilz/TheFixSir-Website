@@ -8,7 +8,7 @@ const Services = () => {
     { duration: '1 Hour', description: 'Up to 3 Muscle Groups', price: 'R450' },
     {
       duration: 'Full Body',
-      description: 'Neck, Shoulders, Arms, Chest, Back, Glute Release, Legs, Feet (2.5+ hrs)',
+      description: 'Neck, Shoulders, Arms, Back, Glute Release, Legs, Feet (2+ hrs)',
       price: 'R1000',
     },
   ];

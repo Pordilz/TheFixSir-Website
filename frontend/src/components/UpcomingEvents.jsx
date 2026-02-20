@@ -4,13 +4,31 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: 'March',
-      shaaban: 'Ramadaan',
-      day: 'TBC',
+      date: '7 March',
+      shaaban: '17th Ramadaan',
+      day: 'Saturday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
+    },
+    {
+      date: '9 March',
+      shaaban: '19th Ramadaan',
+      day: 'Monday',
+      service: 'Hijama/Sunnah Dates',
+      price: 'R350-R400',
+      cups: '8 cups max',
+      featured: false,
+    },
+    {
+      date: '11 March',
+      shaaban: '21st Ramadaan',
+      day: 'Wednesday',
+      service: 'Hijama/Sunnah Dates',
+      price: 'R350-R400',
+      cups: '8 cups max',
+      featured: false,
     },
   ];
 

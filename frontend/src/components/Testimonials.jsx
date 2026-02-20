@@ -27,7 +27,7 @@ const Testimonials = () => {
     },
     {
       name: 'Umeir Samad',
-      location: 'Brazilian Jiu Jiutsu Trainee',
+      location: 'Brazilian Jiu Jitsu Trainee',
       rating: 5,
       text: 'What differentiates the Fixsir from others in his field is the interactive questioning before the treatment... It\'s a great feeling after a session with Muhammed.',
       service: 'Sports Massage & Cupping',

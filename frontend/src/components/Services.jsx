@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, AlertCircle } from 'lucide-react';
+import { Check, AlertCircle, Moon } from 'lucide-react';
 
 const Services = () => {
   const massageServices = [
@@ -149,6 +149,50 @@ const Services = () => {
               </div>
             </div>
           </div>
+
+          {/* Taraweeh / Ramadan Special */}
+          <div className="relative bg-gradient-to-r from-[#1a1a2e] to-[#16213e] rounded-3xl shadow-xl overflow-hidden text-white">
+            <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
+              <Moon size={128} />
+            </div>
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-2/5">
+                <img
+                  src="/ramadan-special.jpg"
+                  alt="Taraweeh Ramadan Special - Sports Massage"
+                  className="w-full h-full object-cover min-h-[300px]"
+                />
+              </div>
+              <div className="md:w-3/5 p-8 flex flex-col justify-center">
+                <div className="flex items-center space-x-2 mb-3">
+                  <Moon className="text-amber-400" size={20} />
+                  <span className="inline-block bg-amber-400/20 text-amber-300 px-4 py-1 rounded-full text-sm font-semibold">
+                    RAMADAAN SPECIAL
+                  </span>
+                </div>
+                <h3 className="text-2xl lg:text-3xl font-bold mb-3">
+                  Feeling the physical effects of Taraweeh?
+                </h3>
+                <p className="text-white/80 mb-2">
+                  Renew and revitalize your spiritual and physical energy with The FixSir!
+                </p>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 mb-4">
+                  <p className="text-amber-300 font-semibold mb-1">Lower Back and Legs</p>
+                  <p className="text-white/80 text-sm">(Quads, Hamstrings, Calves, and Feet)</p>
+                  <p className="text-white/80 text-sm mt-1">1 Hour Sports Massage</p>
+                  <p className="text-3xl font-bold text-amber-400 mt-2">R500</p>
+                </div>
+                <a
+                  href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Ramadaan%20Taraweeh%20Special"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-center bg-amber-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-amber-300 transition-all duration-200"
+                >
+                  Book Ramadaan Special
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Important Notice */}
@@ -165,6 +209,10 @@ const Services = () => {
                 <li className="flex items-start">
                   <Check className="text-amber-600 mr-2 flex-shrink-0 mt-1" size={16} />
                   <span><strong>Males Only.</strong> Alternative female therapists available upon request.</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="text-amber-600 mr-2 flex-shrink-0 mt-1" size={16} />
+                  <span><strong>NB: Ramadaan booking times flexible.</strong></span>
                 </li>
               </ul>
             </div>

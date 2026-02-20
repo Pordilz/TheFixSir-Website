@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import About from '../components/About';
 import Services from '../components/Services';
 import Experience from '../components/Experience';
 import UpcomingEvents from '../components/UpcomingEvents';
@@ -46,7 +45,6 @@ const Home = () => {
     <div className="min-h-screen bg-white">
       <Navbar />
       <Hero />
-      <About />
       <Services />
       <Experience />
       <UpcomingEvents />

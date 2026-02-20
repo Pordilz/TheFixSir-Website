@@ -55,7 +55,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href={location.pathname === '/' ? '#about' : '/#about'} className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
+                <a href="/about" className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
                   About Us
                 </a>
               </li>
@@ -67,6 +67,11 @@ const Footer = () => {
               <li>
                 <a href={location.pathname === '/' ? '#events' : '/#events'} className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
                   Upcoming Events
+                </a>
+              </li>
+              <li>
+                <a href="/blog" className="text-gray-400 hover:text-[#D32F2F] transition-colors duration-200">
+                  Blog
                 </a>
               </li>
             </ul>

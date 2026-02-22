@@ -1,0 +1,17 @@
+{
+    "name": "The FixSir | Sports Massage & Cupping Therapy",
+    "short_name": "The FixSir",
+    "description": "Professional Sports Massage, Hijama Cupping Therapy, and Injury Taping in Durban",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#D32F2F",
+    "background_color": "#ffffff",
+    "icons": [
+        {
+            "src": "https://customer-assets.emergentagent.com/job_e6936146-32b4-41d1-9215-4616bacb2820/artifacts/311cz3q0_PHOTO-2026-02-10-19-55-21.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any"
+        }
+    ]
+}

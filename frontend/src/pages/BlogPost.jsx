@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ArrowLeft, Calendar, BookOpen, Share2 } from 'lucide-react';
@@ -228,6 +229,13 @@ const BlogPost = () => {
     const { slug } = useParams();
     const post = blogPosts[slug];
 
+    const pageTitle = post ? (post.title + ' | The FixSir Blog') : 'Post Not Found | The FixSir';
+    const canonicalUrl = 'https://www.thefixsir.co.za/blog/' + slug;
+
+    React.useEffect(() => {
+        document.title = pageTitle;
+    }, [pageTitle]);
+
     if (!post) {
         return (
             <div className="min-h-screen bg-white">
@@ -248,6 +256,9 @@ const BlogPost = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <Helmet>
+                <link rel="canonical" href={canonicalUrl} />
+            </Helmet>
             <Navbar />
 
             {/* Hero */}

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thefixsir.co.za/sitemap.xml
+Sitemap: https://www.thefixsir.co.za/sitemap.xml

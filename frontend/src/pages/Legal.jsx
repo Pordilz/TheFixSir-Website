@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -16,8 +17,22 @@ const Legal = () => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
 
+    const pageTitle = (activeTab === 'privacy' ? 'Privacy Policy' : 'Terms of Service') + ' | The FixSir';
+    const pageDescription = activeTab === 'privacy'
+        ? 'Privacy Policy for The FixSir — how we collect, use, and safeguard your personal information.'
+        : 'Terms of Service for The FixSir — booking policies, medical disclaimers, and service conditions.';
+    const canonicalUrl = 'https://www.thefixsir.co.za' + location.pathname;
+
+    useEffect(() => {
+        document.title = pageTitle;
+    }, [pageTitle]);
+
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col">
+            <Helmet>
+                <meta name="description" content={pageDescription} />
+                <link rel="canonical" href={canonicalUrl} />
+            </Helmet>
             <Navbar />
 
             <main className="flex-grow pt-32 pb-20">
@@ -35,8 +50,8 @@ const Legal = () => {
                             <button
                                 onClick={() => setActiveTab('terms')}
                                 className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-200 ${activeTab === 'terms'
-                                        ? 'bg-[#D32F2F] text-white shadow-md'
-                                        : 'text-gray-600 hover:text-black hover:bg-gray-50'
+                                    ? 'bg-[#D32F2F] text-white shadow-md'
+                                    : 'text-gray-600 hover:text-black hover:bg-gray-50'
                                     }`}
                             >
                                 Terms of Service
@@ -44,8 +59,8 @@ const Legal = () => {
                             <button
                                 onClick={() => setActiveTab('privacy')}
                                 className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-200 ${activeTab === 'privacy'
-                                        ? 'bg-[#D32F2F] text-white shadow-md'
-                                        : 'text-gray-600 hover:text-black hover:bg-gray-50'
+                                    ? 'bg-[#D32F2F] text-white shadow-md'
+                                    : 'text-gray-600 hover:text-black hover:bg-gray-50'
                                     }`}
                             >
                                 Privacy Policy

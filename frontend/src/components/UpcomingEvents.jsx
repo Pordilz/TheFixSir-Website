@@ -4,27 +4,27 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '7 March',
-      shaaban: '17th Ramadaan',
-      day: 'Saturday',
+      date: '6 April',
+      islamicDate: '17th Shawaal',
+      day: 'Monday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
     },
     {
-      date: '9 March',
-      shaaban: '19th Ramadaan',
-      day: 'Monday',
+      date: '8 April',
+      islamicDate: '19th Shawaal',
+      day: 'Wednesday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
     {
-      date: '11 March',
-      shaaban: '21st Ramadaan',
-      day: 'Wednesday',
+      date: '10 April',
+      islamicDate: '21st Shawaal',
+      day: 'Friday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
@@ -41,7 +41,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Sunnah / Preferred Cupping Dates - Dependent on Moon Sighting
+            April / Shawaal preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
         </div>
@@ -90,7 +90,7 @@ const UpcomingEvents = () => {
                     <Calendar className="text-[#D32F2F]" size={24} />
                     <p className="text-3xl font-bold text-black">{event.date}</p>
                   </div>
-                  <p className="text-gray-600 font-medium">{event.shaaban}</p>
+                  <p className="text-gray-600 font-medium">{event.islamicDate}</p>
                   <p className="text-sm text-gray-500 mt-1">{event.day}</p>
                 </div>
 
@@ -117,7 +117,7 @@ const UpcomingEvents = () => {
 
                 {/* Book Button */}
                 <a
-                  href={`https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20Hijama%20on%20${event.date}%20(${event.shaaban})`}
+                  href={`https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20Hijama%20on%20${event.date}%20(${event.islamicDate})`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 w-full block text-center bg-[#D32F2F] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#B71C1C] transition-all duration-200"

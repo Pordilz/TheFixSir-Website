@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, AlertCircle, Gift, Instagram } from 'lucide-react';
+import { Check, AlertCircle, Gift, Instagram, User, Heart, MessageCircleMore } from 'lucide-react';
 
 const Services = () => {
   const massageServices = [
@@ -154,12 +154,53 @@ const Services = () => {
           <div className="relative bg-gradient-to-r from-[#2A0D0D] via-[#4A1C16] to-[#120707] rounded-3xl shadow-xl overflow-hidden text-white">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.16),_transparent_40%)]"></div>
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-2/5">
-                <img
-                  src="/giveaway-april-shawaal.jpg"
-                  alt="The FixSir giveaway flyer"
-                  className="w-full h-full object-cover min-h-[300px]"
-                />
+              <div className="md:w-2/5 bg-[#C60000] text-white min-h-[300px] flex flex-col justify-between p-6 md:p-7 relative overflow-hidden">
+                <div className="absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.28),_transparent_35%)]"></div>
+                <div className="absolute -top-3 right-0 h-24 w-44 border-t-4 border-white/70 rounded-bl-[60px] opacity-70"></div>
+                <div className="absolute -top-1 right-4 h-20 w-40 border-t-2 border-white/60 rounded-bl-[52px] opacity-80"></div>
+                <div className="absolute bottom-0 left-0 h-24 w-44 border-b-4 border-white/60 rounded-tr-[64px] opacity-60"></div>
+                <div className="absolute bottom-2 left-3 h-20 w-40 border-b-2 border-white/50 rounded-tr-[56px] opacity-70"></div>
+
+                <div className="relative">
+                  <div className="text-center mb-6">
+                    <p className="text-2xl md:text-3xl font-bold tracking-tight">TheFixSir</p>
+                  </div>
+
+                  <div className="text-center mb-5">
+                    <p className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]">
+                      GIVEAWAY!
+                    </p>
+                  </div>
+
+                  <p className="text-center text-sm md:text-base font-bold uppercase leading-snug tracking-wide mb-6">
+                    Win a full body sports massage/deep tissue massage equal to the value of R1000
+                  </p>
+
+                  <div className="bg-white text-black text-center font-black text-2xl md:text-3xl py-3 px-4 w-full max-w-[220px] mx-auto mb-5">
+                    To Enter:
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-3 text-black">
+                    <div className="bg-white px-2 py-4 text-center min-h-[132px] flex flex-col items-center justify-center">
+                      <User size={30} className="mb-3" />
+                      <p className="text-[11px] md:text-xs font-black uppercase leading-tight">Follow</p>
+                      <p className="text-[11px] md:text-xs font-black uppercase leading-tight">@thefixsir.sa</p>
+                    </div>
+                    <div className="bg-white px-2 py-4 text-center min-h-[132px] flex flex-col items-center justify-center">
+                      <Heart size={30} className="mb-3 fill-current" />
+                      <p className="text-[11px] md:text-xs font-black uppercase leading-tight">Like this post</p>
+                    </div>
+                    <div className="bg-white px-2 py-4 text-center min-h-[132px] flex flex-col items-center justify-center">
+                      <MessageCircleMore size={30} className="mb-3 fill-current" />
+                      <p className="text-[11px] md:text-xs font-black uppercase leading-tight">Tag 3 friends</p>
+                      <p className="text-[11px] md:text-xs font-black uppercase leading-tight">below</p>
+                    </div>
+                  </div>
+                </div>
+
+                <p className="relative text-right text-xs md:text-sm font-semibold mt-5">
+                  Females may enter on behalf of males
+                </p>
               </div>
               <div className="md:w-3/5 p-8 flex flex-col justify-center relative">
                 <div className="flex items-center space-x-2 mb-3">

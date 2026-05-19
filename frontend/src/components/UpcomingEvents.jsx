@@ -4,27 +4,27 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '6 April',
-      islamicDate: '17th Shawaal',
-      day: 'Monday',
+      date: '4 June',
+      islamicDate: '17th Dhul Hijjah',
+      day: 'Thursday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
     },
     {
-      date: '8 April',
-      islamicDate: '19th Shawaal',
-      day: 'Wednesday',
+      date: '6 June',
+      islamicDate: '19th Dhul Hijjah',
+      day: 'Saturday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
     {
-      date: '10 April',
-      islamicDate: '21st Shawaal',
-      day: 'Friday',
+      date: '8 June',
+      islamicDate: '21st Dhul Hijjah',
+      day: 'Monday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
@@ -41,7 +41,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            April / Shawaal preferred cupping dates - dependent on moon sighting
+            June / Dhul Hijjah preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
         </div>

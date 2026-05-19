@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, AlertCircle, Gift, Instagram, User, Heart, MessageCircleMore } from 'lucide-react';
+import { Check, AlertCircle, Sparkles, MessageCircle, Clock } from 'lucide-react';
 
 const Services = () => {
   const massageServices = [
@@ -150,87 +150,53 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Giveaway */}
-          <div className="relative bg-gradient-to-r from-[#2A0D0D] via-[#4A1C16] to-[#120707] rounded-3xl shadow-xl overflow-hidden text-white">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.16),_transparent_40%)]"></div>
+          {/* Runners Special */}
+          <div className="relative bg-gradient-to-br from-[#2A0D0D] via-[#4A1C16] to-[#120707] rounded-3xl shadow-xl overflow-hidden text-white">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.12),_transparent_45%)]"></div>
             <div className="flex flex-col md:flex-row">
-              <div className="md:w-2/5 bg-[#C60000] text-white min-h-[300px] flex flex-col justify-between p-4 sm:p-6 md:p-7 relative overflow-hidden">
-                <div className="absolute inset-x-0 top-0 h-24 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.28),_transparent_35%)]"></div>
-                <div className="absolute -top-3 right-0 h-24 w-44 border-t-4 border-white/70 rounded-bl-[60px] opacity-70"></div>
-                <div className="absolute -top-1 right-4 h-20 w-40 border-t-2 border-white/60 rounded-bl-[52px] opacity-80"></div>
-
-                <div className="relative flex-1 flex flex-col justify-center max-w-[420px] mx-auto w-full">
-                  <div className="text-center mb-4 sm:mb-6">
-                    <p className="text-2xl md:text-3xl font-bold tracking-tight">TheFixSir</p>
-                  </div>
-
-                  <div className="text-center mb-4 sm:mb-5">
-                    <p className="text-[3.25rem] sm:text-6xl md:text-7xl font-black tracking-tight leading-none drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)]">
-                      GIVEAWAY!
-                    </p>
-                  </div>
-
-                  <p className="text-center text-[13px] sm:text-sm md:text-base font-bold uppercase leading-snug tracking-wide mb-5 sm:mb-6">
-                    Win a full body sports massage/deep tissue massage equal to the value of R1000
-                  </p>
-
-                  <div className="bg-white text-black text-center font-black text-2xl md:text-3xl py-3 px-4 w-full max-w-[220px] mx-auto mb-4 sm:mb-5">
-                    To Enter:
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-2 sm:gap-3 text-black">
-                    <div className="bg-white px-1.5 sm:px-2 py-3 sm:py-4 text-center min-h-[118px] sm:min-h-[132px] flex flex-col items-center justify-center">
-                      <User size={28} className="mb-2 sm:mb-3" />
-                      <p className="text-[10px] sm:text-[11px] md:text-xs font-black uppercase leading-tight">Follow</p>
-                      <p className="text-[10px] sm:text-[11px] md:text-xs font-black uppercase leading-tight">@thefixsir.sa</p>
-                    </div>
-                    <div className="bg-white px-1.5 sm:px-2 py-3 sm:py-4 text-center min-h-[118px] sm:min-h-[132px] flex flex-col items-center justify-center">
-                      <Heart size={28} className="mb-2 sm:mb-3 fill-current" />
-                      <p className="text-[10px] sm:text-[11px] md:text-xs font-black uppercase leading-tight">Like this post</p>
-                    </div>
-                    <div className="bg-white px-1.5 sm:px-2 py-3 sm:py-4 text-center min-h-[118px] sm:min-h-[132px] flex flex-col items-center justify-center">
-                      <MessageCircleMore size={28} className="mb-2 sm:mb-3 fill-current" />
-                      <p className="text-[10px] sm:text-[11px] md:text-xs font-black uppercase leading-tight">Tag 3 friends</p>
-                      <p className="text-[10px] sm:text-[11px] md:text-xs font-black uppercase leading-tight">below</p>
-                    </div>
-                  </div>
-                </div>
-
-                <p className="relative text-center text-xs md:text-sm font-semibold mt-4 sm:mt-5">
-                  Females may enter on behalf of males
-                </p>
+              <div className="md:w-2/5 bg-[#C60000] flex items-center justify-center p-4 sm:p-6 md:p-8">
+                <img
+                  src="/runners-special.jpg"
+                  alt="Runners Special - Full Lower Body Sports Massage R450 (Valued at R600). Offer ends 21 June 2026."
+                  className="w-full max-w-[440px] h-auto rounded-2xl shadow-2xl"
+                  loading="lazy"
+                />
               </div>
-              <div className="md:w-3/5 p-8 flex flex-col justify-center relative">
+              <div className="md:w-3/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center relative">
                 <div className="flex items-center space-x-2 mb-3">
-                  <Gift className="text-amber-300" size={20} />
-                  <span className="inline-block bg-amber-300/20 text-amber-200 px-4 py-1 rounded-full text-sm font-semibold">
-                    APRIL GIVEAWAY
+                  <Sparkles className="text-amber-300" size={20} />
+                  <span className="inline-block bg-amber-300/20 text-amber-200 px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide">
+                    Runners Special
                   </span>
                 </div>
                 <h3 className="text-2xl lg:text-3xl font-bold mb-3">
-                  Ready to experience professional recovery therapy for free?
+                  Don't walk. Run. Recovery made for runners.
                 </h3>
-                <p className="text-white/80 mb-4">
-                  Win a full body sports massage or deep tissue massage equal to the value of R1000 by entering our giveaway.
+                <p className="text-white/80 mb-5">
+                  A focused full lower body sports massage designed to release tight glutes, hamstrings, quads, calves and feet — built for race prep and post-run recovery.
                 </p>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 mb-4">
-                  <p className="text-amber-200 font-semibold mb-1">Giveaway Prize</p>
-                  <p className="text-2xl font-bold text-white">Full Body Sports Massage / Deep Tissue Massage</p>
-                  <p className="text-white/80 text-sm mt-2">Equal to the value of</p>
-                  <p className="text-4xl font-bold text-amber-300 mt-1">R1000</p>
+                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 mb-5">
+                  <p className="text-amber-200 font-semibold mb-1 text-sm uppercase tracking-wide">Full Lower Body Sports Massage</p>
+                  <div className="flex items-baseline gap-3 mt-1">
+                    <p className="text-4xl lg:text-5xl font-bold text-amber-300">R450</p>
+                    <p className="text-white/70 text-base">
+                      valued at <span className="line-through">R600</span>
+                    </p>
+                  </div>
                 </div>
-                <p className="text-white/90 mb-5">
-                  See our Instagram for details on how to enter.
-                </p>
+                <div className="flex items-center gap-2 text-amber-200 mb-5">
+                  <Clock size={18} />
+                  <p className="text-sm font-semibold">Offer ends 21 June 2026 — limited slots available</p>
+                </div>
                 <div>
                   <a
-                    href="https://www.instagram.com/thefixsir.sa?igsh=Y2h2NncxeW9pdzJw"
+                    href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Runners%20Special%20(Full%20Lower%20Body%20Sports%20Massage%20-%20R450)"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 bg-amber-300 text-black px-8 py-3 rounded-full font-semibold hover:bg-amber-200 transition-all duration-200"
                   >
-                    <Instagram size={18} />
-                    View on Instagram
+                    <MessageCircle size={18} />
+                    Book Runners Special
                   </a>
                 </div>
               </div>

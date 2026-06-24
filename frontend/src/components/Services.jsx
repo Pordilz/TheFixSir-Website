@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, AlertCircle, Sparkles, MessageCircle, Clock } from 'lucide-react';
+import { Check, AlertCircle } from 'lucide-react';
 
 const Services = () => {
   const massageServices = [
@@ -14,7 +14,7 @@ const Services = () => {
   ];
 
   const cuppingServices = [
-    { name: 'Dry Cupping', description: 'Up to 10 cups', price: 'R200' },
+    { name: 'Dry Cupping', description: 'Up to 10 cups', price: 'R300' },
     { name: 'Wet/Hijama Cupping', description: 'Up to 8 cups', price: 'R350' },
     { name: 'Specific Hijama Sunnah Points', description: 'Up to 8 cups', price: 'R400' },
     { name: 'Each Additional Cup', description: 'Per cup', price: 'R50' },
@@ -146,59 +146,6 @@ const Services = () => {
                 >
                   Book Combo
                 </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Runners Special */}
-          <div className="relative bg-gradient-to-br from-[#2A0D0D] via-[#4A1C16] to-[#120707] rounded-3xl shadow-xl overflow-hidden text-white">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.12),_transparent_45%)]"></div>
-            <div className="flex flex-col md:flex-row">
-              <div className="md:w-2/5 bg-[#C60000] flex items-center justify-center p-4 sm:p-6 md:p-8">
-                <img
-                  src="/runners-special.jpg"
-                  alt="Runners Special - Full Lower Body Sports Massage R450 (Valued at R600). Offer ends 21 June 2026."
-                  className="w-full max-w-[440px] h-auto rounded-2xl shadow-2xl"
-                  loading="lazy"
-                />
-              </div>
-              <div className="md:w-3/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center relative">
-                <div className="flex items-center space-x-2 mb-3">
-                  <Sparkles className="text-amber-300" size={20} />
-                  <span className="inline-block bg-amber-300/20 text-amber-200 px-4 py-1 rounded-full text-sm font-semibold uppercase tracking-wide">
-                    Runners Special
-                  </span>
-                </div>
-                <h3 className="text-2xl lg:text-3xl font-bold mb-3">
-                  Don't walk. Run. Recovery made for runners.
-                </h3>
-                <p className="text-white/80 mb-5">
-                  A focused full lower body sports massage designed to release tight glutes, hamstrings, quads, calves and feet — built for race prep and post-run recovery.
-                </p>
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 mb-5">
-                  <p className="text-amber-200 font-semibold mb-1 text-sm uppercase tracking-wide">Full Lower Body Sports Massage</p>
-                  <div className="flex items-baseline gap-3 mt-1">
-                    <p className="text-4xl lg:text-5xl font-bold text-amber-300">R450</p>
-                    <p className="text-white/70 text-base">
-                      valued at <span className="line-through">R600</span>
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 text-amber-200 mb-5">
-                  <Clock size={18} />
-                  <p className="text-sm font-semibold">Offer ends 21 June 2026 — limited slots available</p>
-                </div>
-                <div>
-                  <a
-                    href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Runners%20Special%20(Full%20Lower%20Body%20Sports%20Massage%20-%20R450)"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 bg-amber-300 text-black px-8 py-3 rounded-full font-semibold hover:bg-amber-200 transition-all duration-200"
-                  >
-                    <MessageCircle size={18} />
-                    Book Runners Special
-                  </a>
-                </div>
               </div>
             </div>
           </div>

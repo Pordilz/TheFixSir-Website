@@ -4,8 +4,8 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '4 June',
-      islamicDate: '17th Dhul Hijjah',
+      date: '2 July',
+      islamicDate: '17th Muharram',
       day: 'Thursday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
@@ -13,8 +13,8 @@ const UpcomingEvents = () => {
       featured: true,
     },
     {
-      date: '6 June',
-      islamicDate: '19th Dhul Hijjah',
+      date: '4 July',
+      islamicDate: '19th Muharram',
       day: 'Saturday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
@@ -22,14 +22,21 @@ const UpcomingEvents = () => {
       featured: false,
     },
     {
-      date: '8 June',
-      islamicDate: '21st Dhul Hijjah',
+      date: '6 July',
+      islamicDate: '21st Muharram',
       day: 'Monday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
+  ];
+
+  // Sunnah Hijama calendar — July 2026 starts on a Wednesday (3 leading blanks).
+  const sunnahDays = [2, 4, 6];
+  const calendarCells = [
+    ...Array(3).fill(null),
+    ...Array.from({ length: 31 }, (_, i) => i + 1),
   ];
 
   return (
@@ -41,7 +48,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            June / Dhul Hijjah preferred cupping dates - dependent on moon sighting
+            July / Muharram preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
         </div>
@@ -65,6 +72,66 @@ const UpcomingEvents = () => {
             </div>
             <div className="bg-black/30 px-6 py-3 rounded-full font-bold text-lg">
               Males Only
+            </div>
+          </div>
+        </div>
+
+        {/* Sunnah Hijama Dates Calendar */}
+        <div className="bg-gradient-to-br from-[#D32F2F] to-[#B71C1C] rounded-3xl shadow-xl overflow-hidden mb-12">
+          <div className="max-w-2xl mx-auto px-6 py-10 sm:px-10 sm:py-12 text-white">
+            {/* Brand */}
+            <div className="flex items-center justify-center space-x-3 mb-6">
+              <img
+                src="https://customer-assets.emergentagent.com/job_e6936146-32b4-41d1-9215-4616bacb2820/artifacts/311cz3q0_PHOTO-2026-02-10-19-55-21.jpg"
+                alt="TheFixSir"
+                className="w-12 h-12 rounded-full object-cover bg-white"
+              />
+              <span className="text-3xl font-bold tracking-tight">TheFixSir</span>
+            </div>
+
+            <h3 className="text-center text-3xl sm:text-4xl font-extrabold uppercase tracking-tight mb-8">
+              Sunnah Hijama Dates
+            </h3>
+
+            {/* Calendar */}
+            <div className="bg-[#F7ECEC] text-[#1B2A4A] rounded-2xl border-2 border-[#1B2A4A]/80 p-4 sm:p-6">
+              <div className="flex items-end justify-between border-b-2 border-[#1B2A4A] pb-3 mb-4">
+                <span className="bg-[#F0B9B9] text-[#1B2A4A] text-2xl sm:text-3xl font-bold px-4 py-1 rounded-lg">
+                  2026
+                </span>
+                <span className="text-2xl sm:text-3xl font-bold tracking-wide">JULY</span>
+              </div>
+
+              <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">
+                {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((d) => (
+                  <div key={d} className="text-[10px] sm:text-xs font-bold text-[#D32F2F] pb-1">
+                    {d}
+                  </div>
+                ))}
+                {calendarCells.map((day, i) => (
+                  <div
+                    key={i}
+                    className={`aspect-square flex items-center justify-center rounded-md ${day ? 'bg-white/70' : ''}`}
+                  >
+                    {day && (
+                      <span
+                        className={`flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 text-sm sm:text-lg font-bold rounded-full ${sunnahDays.includes(day) ? 'ring-2 ring-[#D32F2F] text-[#D32F2F]' : ''
+                          }`}
+                      >
+                        {day}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Price */}
+            <div className="mt-8 text-center">
+              <p className="text-2xl sm:text-3xl font-extrabold tracking-wide">R350 PP (8 CUPS)</p>
+              <p className="mt-3 text-sm text-white/90 font-medium">
+                Males – 064 890 6906&nbsp;&nbsp;•&nbsp;&nbsp;Females – 082 882 7865
+              </p>
             </div>
           </div>
         </div>

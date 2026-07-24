@@ -4,27 +4,27 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '2 July',
-      islamicDate: '17th Muharram',
-      day: 'Thursday',
+      date: '1 August',
+      islamicDate: '17th Safar',
+      day: 'Saturday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
     },
     {
-      date: '4 July',
-      islamicDate: '19th Muharram',
-      day: 'Saturday',
+      date: '3 August',
+      islamicDate: '19th Safar',
+      day: 'Monday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
     {
-      date: '6 July',
-      islamicDate: '21st Muharram',
-      day: 'Monday',
+      date: '5 August',
+      islamicDate: '21st Safar',
+      day: 'Wednesday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
@@ -32,10 +32,10 @@ const UpcomingEvents = () => {
     },
   ];
 
-  // Sunnah Hijama calendar — July 2026 starts on a Wednesday (3 leading blanks).
-  const sunnahDays = [2, 4, 6];
+  // Sunnah Hijama calendar — August 2026 starts on a Saturday (6 leading blanks).
+  const sunnahDays = [1, 3, 5];
   const calendarCells = [
-    ...Array(3).fill(null),
+    ...Array(6).fill(null),
     ...Array.from({ length: 31 }, (_, i) => i + 1),
   ];
 
@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            July / Muharram preferred cupping dates - dependent on moon sighting
+            August / Safar preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
         </div>
@@ -99,7 +99,7 @@ const UpcomingEvents = () => {
                 <span className="bg-[#F0B9B9] text-[#1B2A4A] text-2xl sm:text-3xl font-bold px-4 py-1 rounded-lg">
                   2026
                 </span>
-                <span className="text-2xl sm:text-3xl font-bold tracking-wide">JULY</span>
+                <span className="text-2xl sm:text-3xl font-bold tracking-wide">AUGUST</span>
               </div>
 
               <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">

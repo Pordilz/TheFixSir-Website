@@ -161,7 +161,7 @@ const Services = () => {
               <ul className="space-y-1 text-gray-700">
                 <li className="flex items-start">
                   <Check className="text-amber-600 mr-2 flex-shrink-0 mt-1" size={16} />
-                  <span>All prices exclude call-out fees (R100-R150 location dependent)</span>
+                  <span>All prices exclude call-out fees (starting from R100, location dependent)</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-amber-600 mr-2 flex-shrink-0 mt-1" size={16} />

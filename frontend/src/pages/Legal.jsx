@@ -109,7 +109,7 @@ const Legal = () => {
                                         <h3 className="text-xl font-bold text-[#0C3242] mb-3">4. Mobile Services & Call-Out Fees</h3>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li><strong>Location:</strong> We require a safe, clean, and adequate space to set up a massage table and equipment at your location, should you opt for our mobile service.</li>
-                                            <li><strong>Fees:</strong> Prices listed exclude call-out fees, which vary based on location (R100–R150+). These fees are payable in addition to the treatment cost.</li>
+                                            <li><strong>Fees:</strong> Prices listed exclude call-out fees, which start from R100 and vary based on location. These fees are payable in addition to the treatment cost.</li>
                                         </ul>
                                     </section>
 

@@ -40,8 +40,8 @@ const Legal = () => {
 
                     {/* Page Header */}
                     <div className="text-center mb-12">
-                        <h1 className="text-4xl font-bold text-black mb-4">Legal Information</h1>
-                        <div className="w-20 h-1 bg-[#D32F2F] mx-auto"></div>
+                        <h1 className="text-4xl font-bold text-[#0C3242] mb-4">Legal Information</h1>
+                        <div className="w-20 h-1 brand-rule rounded-full mx-auto"></div>
                     </div>
 
                     {/* Tabs */}
@@ -50,7 +50,7 @@ const Legal = () => {
                             <button
                                 onClick={() => setActiveTab('terms')}
                                 className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-200 ${activeTab === 'terms'
-                                    ? 'bg-[#D32F2F] text-white shadow-md'
+                                    ? 'bg-[#136281] text-white shadow-md'
                                     : 'text-gray-600 hover:text-black hover:bg-gray-50'
                                     }`}
                             >
@@ -59,7 +59,7 @@ const Legal = () => {
                             <button
                                 onClick={() => setActiveTab('privacy')}
                                 className={`px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-200 ${activeTab === 'privacy'
-                                    ? 'bg-[#D32F2F] text-white shadow-md'
+                                    ? 'bg-[#136281] text-white shadow-md'
                                     : 'text-gray-600 hover:text-black hover:bg-gray-50'
                                     }`}
                             >
@@ -79,14 +79,14 @@ const Legal = () => {
 
                                 <div className="space-y-8">
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">1. Introduction</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">1. Introduction</h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             Welcome to The FixSir. By booking an appointment or using our services (including Sports Massage, Cupping/Hijama, Injury Taping, and any other additional treatments), you agree to comply with and be bound by the following terms and conditions.
                                         </p>
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">2. Medical Disclaimer</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">2. Medical Disclaimer</h3>
                                         <p className="text-gray-700 leading-relaxed mb-4">
                                             The services provided by The FixSir are not a substitute for medical diagnosis, advanced medical treatment, or care from a licensed physician.
                                         </p>
@@ -97,7 +97,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">3. Bookings and Cancellations</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">3. Bookings and Cancellations</h3>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li><strong>Appointments:</strong> All sessions are by appointment only.</li>
                                             <li><strong>Cancellations:</strong> We require at least 24 hours notice for cancellations or rescheduling. Failure to do so may result in a cancellation fee.</li>
@@ -106,7 +106,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">4. Mobile Services & Call-Out Fees</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">4. Mobile Services & Call-Out Fees</h3>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li><strong>Location:</strong> We require a safe, clean, and adequate space to set up a massage table and equipment at your location, should you opt for our mobile service.</li>
                                             <li><strong>Fees:</strong> Prices listed exclude call-out fees, which vary based on location (R100–R150+). These fees are payable in addition to the treatment cost.</li>
@@ -114,7 +114,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">5. Code of Conduct & Right to Refuse Service</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">5. Code of Conduct & Right to Refuse Service</h3>
                                         <p className="text-gray-700 mb-4">We are committed to providing a professional and safe environment.</p>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li><strong>Zero Tolerance:</strong> Any illicit, sexual, or aggressive behavior will result in the immediate termination of the session with full payment due.</li>
@@ -123,14 +123,14 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">6. Indemnity</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">6. Indemnity</h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             By using our services, you voluntarily agree to assume all risks involved. You hereby release, waive, discharge, and hold harmless The FixSir and its therapists from any claims, liabilities, or damages arising from your receipt of these services, including wet cupping (Hijama) and deep tissue work.
                                         </p>
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">7. Governing Law</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">7. Governing Law</h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             These terms are governed by the laws of the Republic of South Africa.
                                         </p>
@@ -147,14 +147,14 @@ const Legal = () => {
 
                                 <div className="space-y-8">
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">1. Introduction</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">1. Introduction</h3>
                                         <p className="text-gray-700 leading-relaxed">
                                             The FixSir ("we", "us", "our") is committed to protecting your privacy in accordance with the Protection of Personal Information Act (POPIA) of South Africa. This policy explains how we collect, use, and safeguard your personal information.
                                         </p>
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">2. Information Collection</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">2. Information Collection</h3>
                                         <p className="text-gray-700 mb-4">We collect necessary personal information to provide safe and effective therapy, including:</p>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li><strong>Personal Information:</strong> Name, phone number, email address, and physical address (for mobile call-outs).</li>
@@ -163,7 +163,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">3. How We Use Your Information</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">3. How We Use Your Information</h3>
                                         <p className="text-gray-700 mb-4">We use your data strictly for business purposes:</p>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li>To schedule and manage appointments.</li>
@@ -174,7 +174,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">4. Data Sharing and Security</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">4. Data Sharing and Security</h3>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li><strong>Confidentiality:</strong> Your health information is treated as strictly confidential. We do not sell or rent your personal data to third parties.</li>
                                             <li><strong>Service Providers:</strong> We may share necessary details (like address) with trusted staff or referral partners (e.g., female therapists) only with your consent.</li>
@@ -183,7 +183,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">5. Your Rights Under POPIA</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">5. Your Rights Under POPIA</h3>
                                         <p className="text-gray-700 mb-2">You have the right to:</p>
                                         <ul className="list-disc pl-5 space-y-2 text-gray-700">
                                             <li>Request access to the personal information we hold about you.</li>
@@ -193,7 +193,7 @@ const Legal = () => {
                                     </section>
 
                                     <section>
-                                        <h3 className="text-xl font-bold text-black mb-3">6. Contact Us</h3>
+                                        <h3 className="text-xl font-bold text-[#0C3242] mb-3">6. Contact Us</h3>
                                         <p className="text-gray-700 mb-4">Should you have any questions about this policy or your data, please contact us at:</p>
                                         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                                             <p className="text-gray-700"><strong>Phone/WhatsApp:</strong> 064 890 6906</p>

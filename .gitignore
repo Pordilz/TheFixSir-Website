@@ -78,3 +78,8 @@ agenthub/agents/youtube/db
 
 # Mobile development
 android-sdk/ 
+# Brand source artwork (design masters, not needed for the build)
+Website elements/
+
+# Client-facing preview exports (generated)
+Client Preview/

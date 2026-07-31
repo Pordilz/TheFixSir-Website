@@ -13,6 +13,36 @@ module.exports = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+  			// FixSir brand palette — deep blue #136281 + teal #178E92
+  			brand: {
+  				blue: {
+  					50: '#F2F6F8',
+  					100: '#E0EBEF',
+  					200: '#C2D6DE',
+  					300: '#97BAC8',
+  					400: '#5F94A9',
+  					500: '#347893',
+  					600: '#136281',
+  					700: '#11526D',
+  					800: '#0F4359',
+  					900: '#0C3242',
+  					950: '#0A2430'
+  				},
+  				teal: {
+  					50: '#F2F9F9',
+  					100: '#E1F0F1',
+  					200: '#C3E2E3',
+  					300: '#99CDCF',
+  					400: '#61B2B5',
+  					500: '#379EA1',
+  					600: '#178E92',
+  					700: '#14767A',
+  					800: '#115D63',
+  					900: '#0E4249',
+  					950: '#0B2C34'
+  				},
+  				slate: '#2F5870'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

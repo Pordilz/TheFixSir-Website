@@ -34,7 +34,7 @@ const CuppingDeepDive = () => (
         </ul>
 
         <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-black mb-4">Dry Cupping</h3>
+            <h3 className="text-2xl font-bold text-[#0C3242] mb-4">Dry Cupping</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
                 Dry Cupping involves the use of cups placed on the skin to create suction. There are{' '}
                 <strong>no incisions made on the skin surface</strong>, and{' '}
@@ -53,7 +53,7 @@ const CuppingDeepDive = () => (
         </div>
 
         <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-            <h3 className="text-2xl font-bold text-black mb-4">Wet Cupping (Hijama)</h3>
+            <h3 className="text-2xl font-bold text-[#0C3242] mb-4">Wet Cupping (Hijama)</h3>
             <p className="text-gray-700 leading-relaxed mb-4">
                 Wet Cupping, also known as <strong>Hijama</strong>, combines suction with slight,
                 superficial incisions made on the skin's surface. After ensuring that all hygienic protocols
@@ -82,19 +82,19 @@ const CuppingDeepDive = () => (
             the finger to release a drop of blood.
         </p>
 
-        <div className="bg-[#D32F2F]/5 border-l-4 border-[#D32F2F] rounded-r-2xl p-8 mb-8">
-            <h2 className="text-2xl font-bold text-black mb-6">Hadith on Hijama (Cupping)</h2>
+        <div className="bg-[#178E92]/5 border-l-4 border-[#178E92] rounded-r-2xl p-8 mb-8">
+            <h2 className="text-2xl font-bold text-[#0C3242] mb-6">Hadith on Hijama (Cupping)</h2>
             <p className="text-gray-700 mb-6">
                 Hijama is also rooted in Islamic tradition. The Prophet Muhammad (Peace Be Upon Him) spoke
                 highly of cupping as a remedy.
             </p>
-            <blockquote className="border-l-4 border-[#D32F2F] pl-6 my-6 not-prose">
+            <blockquote className="border-l-4 border-[#178E92] pl-6 my-6 not-prose">
                 <p className="text-xl italic text-gray-800 mb-2">
                     "Indeed the best of remedies you have is cupping."
                 </p>
                 <p className="text-sm text-gray-600 font-semibold">— Sahih Bukhari 5371</p>
             </blockquote>
-            <blockquote className="border-l-4 border-[#D32F2F] pl-6 my-6 not-prose">
+            <blockquote className="border-l-4 border-[#178E92] pl-6 my-6 not-prose">
                 <p className="text-xl italic text-gray-800 mb-2">
                     "If there is any good in the medicines with which you treat yourselves, it is in the
                     incisions of the Hijama therapist, or a drink of honey or cauterization with fire, but I
@@ -126,7 +126,7 @@ const CuppingDeepDive = () => (
         <p className="text-sm text-gray-600 mb-8">— Sunan Ibn Majah 3486; 3487</p>
 
         <div className="bg-gray-50 rounded-2xl p-8 mb-8">
-            <h2 className="text-2xl font-bold text-black mb-6">Sunnah Points for Cupping</h2>
+            <h2 className="text-2xl font-bold text-[#0C3242] mb-6">Sunnah Points for Cupping</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
                 There are specific areas mentioned in narrations that carry particular benefit when cupped:
             </p>
@@ -187,7 +187,7 @@ const CuppingDeepDive = () => (
                     key={item.num}
                     className="flex items-start space-x-4 bg-gray-50 rounded-xl p-4"
                 >
-                    <span className="flex-shrink-0 w-8 h-8 bg-[#D32F2F] text-white rounded-full flex items-center justify-center font-bold text-sm">
+                    <span className="flex-shrink-0 w-8 h-8 bg-[#136281] text-white rounded-full flex items-center justify-center font-bold text-sm">
                         {item.num}
                     </span>
                     <p className="text-gray-700">{item.text}</p>
@@ -208,7 +208,7 @@ const CuppingDeepDive = () => (
         </p>
 
         {/* CTA */}
-        <div className="bg-gradient-to-r from-[#D32F2F] to-[#B71C1C] rounded-3xl p-8 mt-12 text-center text-white">
+        <div className="bg-gradient-to-r from-[#136281] to-[#178E92] rounded-3xl p-8 mt-12 text-center text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to Experience the Benefits of Cupping?</h3>
             <p className="text-white/90 mb-6">
                 Book your Hijama or Dry Cupping session with The FixSir today.
@@ -217,7 +217,7 @@ const CuppingDeepDive = () => (
                 href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20a%20cupping%20session"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-[#D32F2F] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200"
+                className="inline-block bg-white text-[#136281] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200"
             >
                 Book via WhatsApp
             </a>
@@ -241,10 +241,10 @@ const BlogPost = () => {
             <div className="min-h-screen bg-white">
                 <Navbar />
                 <div className="pt-32 pb-20 text-center">
-                    <h1 className="text-4xl font-bold text-black mb-4">Post Not Found</h1>
+                    <h1 className="text-4xl font-bold text-[#0C3242] mb-4">Post Not Found</h1>
                     <Link
                         to="/"
-                        className="text-[#D32F2F] font-semibold hover:underline"
+                        className="text-[#178E92] font-semibold hover:underline"
                     >
                         ← Back to Home
                     </Link>

@@ -21,13 +21,13 @@ const Blog = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+                    <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
                         Blog
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Insights, education, and tips on recovery and therapy
                     </p>
-                    <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+                    <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
                 </div>
 
                 {/* Blog Posts Grid */}
@@ -50,7 +50,7 @@ const Blog = () => {
                                     {post.tags.map((tag, i) => (
                                         <span
                                             key={i}
-                                            className="bg-white/90 text-[#D32F2F] px-3 py-1 rounded-full text-xs font-semibold"
+                                            className="bg-white/90 text-[#136281] px-3 py-1 rounded-full text-xs font-semibold"
                                         >
                                             {tag}
                                         </span>
@@ -70,11 +70,11 @@ const Blog = () => {
                                         <span>{post.readTime}</span>
                                     </span>
                                 </div>
-                                <h3 className="text-xl font-bold text-black mb-3 group-hover:text-[#D32F2F] transition-colors">
+                                <h3 className="text-xl font-bold text-[#0C3242] mb-3 group-hover:text-[#178E92] transition-colors">
                                     {post.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed mb-4">{post.excerpt}</p>
-                                <div className="flex items-center text-[#D32F2F] font-semibold">
+                                <div className="flex items-center text-[#178E92] font-semibold">
                                     <span>Read More</span>
                                     <ArrowRight
                                         size={16}

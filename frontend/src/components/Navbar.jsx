@@ -59,7 +59,7 @@ const Navbar = () => {
           left: 50%;
           width: 0;
           height: 2px;
-          background-color: #D32F2F;
+          background-color: #178E92;
           transition: all 0.3s ease;
           transform: translateX(-50%);
           border-radius: 1px;
@@ -69,7 +69,7 @@ const Navbar = () => {
           width: 100%;
         }
         .nav-link-item.active {
-          color: #D32F2F;
+          color: #136281;
         }
 
         .mobile-menu-enter {
@@ -103,18 +103,10 @@ const Navbar = () => {
               className="flex items-center gap-3 group"
             >
               <img
-                src="https://customer-assets.emergentagent.com/job_e6936146-32b4-41d1-9215-4616bacb2820/artifacts/311cz3q0_PHOTO-2026-02-10-19-55-21.jpg"
-                alt="The FixSir Logo"
-                className="h-11 w-11 rounded-lg object-cover shadow-sm group-hover:shadow-md transition-shadow duration-300"
+                src="/brand/logo-copyline-blueteal.png"
+                alt="FixSir — The Science of Movement"
+                className="h-11 w-auto transition-transform duration-300 group-hover:scale-[1.03]"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold text-gray-900 tracking-tight leading-tight">
-                  The FixSir
-                </span>
-                <span className="text-[10px] font-medium text-[#D32F2F] tracking-widest uppercase leading-tight">
-                  Recovery Therapy
-                </span>
-              </div>
             </a>
 
             {/* Desktop Navigation */}
@@ -125,8 +117,8 @@ const Navbar = () => {
                     key={link.name}
                     href={getHref(link)}
                     className={`nav-link-item text-[15px] font-medium transition-colors duration-200 ${isActive(link)
-                        ? 'active text-[#D32F2F]'
-                        : 'text-gray-600 hover:text-[#D32F2F]'
+                        ? 'active text-[#136281]'
+                        : 'text-gray-600 hover:text-[#136281]'
                       }`}
                   >
                     {link.name}
@@ -139,7 +131,7 @@ const Navbar = () => {
                 href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-[#D32F2F] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#B71C1C] transition-all duration-300 hover:shadow-lg hover:shadow-red-200/50 active:scale-[0.98]"
+                className="flex items-center gap-2 bg-[#136281] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#178E92] transition-all duration-300 hover:shadow-lg hover:shadow-[#178E92]/30 active:scale-[0.98]"
               >
                 <Phone size={14} strokeWidth={2.5} />
                 Book Now
@@ -172,13 +164,13 @@ const Navbar = () => {
                     href={getHref(link)}
                     onClick={() => setIsOpen(false)}
                     className={`mobile-link-item flex items-center px-4 py-3 rounded-xl text-[15px] font-medium transition-all duration-200 ${isActive(link)
-                        ? 'bg-red-50 text-[#D32F2F]'
+                        ? 'bg-brand-blue-50 text-[#136281]'
                         : 'text-gray-700 hover:bg-gray-50 active:bg-gray-100'
                       }`}
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
                     {isActive(link) && (
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#D32F2F] mr-3" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#136281] mr-3" />
                     )}
                     {link.name}
                   </a>
@@ -191,7 +183,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
-                  className="mobile-link-item flex items-center justify-center gap-2 w-full bg-[#D32F2F] text-white px-6 py-3 rounded-xl text-[15px] font-semibold hover:bg-[#B71C1C] transition-all duration-200 active:scale-[0.98]"
+                  className="mobile-link-item flex items-center justify-center gap-2 w-full bg-[#136281] text-white px-6 py-3 rounded-xl text-[15px] font-semibold hover:bg-[#178E92] transition-all duration-200 active:scale-[0.98]"
                   style={{ animationDelay: `${navLinks.length * 50}ms` }}
                 >
                   <Phone size={16} />

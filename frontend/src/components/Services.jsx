@@ -32,17 +32,18 @@ const Services = () => {
   };
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="relative py-20 bg-[#F2F6F8] overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-honeycomb opacity-[0.08]" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
             Services & Pricing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Professional mobile therapy services at competitive rates
           </p>
-          <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+          <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
 
         {/* Services Grid */}
@@ -50,7 +51,7 @@ const Services = () => {
           {/* Sports Massage */}
           <div className="bg-white rounded-3xl shadow-lg p-8">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-2xl font-bold text-black">Sports Massage / Deep Tissue Massage</h3>
+              <h3 className="text-2xl font-bold text-[#0C3242]">Sports Massage / Deep Tissue Massage</h3>
               <img
                 src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBtYXNzYWdlfGVufDB8fHx8MTc3MDc0NzMwMHww&ixlib=rb-4.1.0&q=85"
                 alt="Sports Massage"
@@ -61,23 +62,23 @@ const Services = () => {
               {massageServices.map((service, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#D32F2F] hover:shadow-md transition-all duration-200 relative"
+                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#178E92] hover:shadow-md transition-all duration-200 relative"
                 >
                   {service.badge && (
-                    <span className="absolute -top-3 right-4 bg-[#D32F2F] text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <span className="absolute -top-3 right-4 bg-[#136281] text-white px-3 py-1 rounded-full text-xs font-semibold">
                       {service.badge}
                     </span>
                   )}
-                  <p className="text-lg font-bold text-black mb-2">{service.duration}</p>
+                  <p className="text-lg font-bold text-[#0C3242] mb-2">{service.duration}</p>
                   <p className="text-sm text-gray-600 mb-4 min-h-[40px]">{service.description}</p>
                   <div>
                     {service.special ? (
                       <div>
                         <p className="text-gray-400 line-through text-sm">{service.price}</p>
-                        <p className="text-2xl font-bold text-[#D32F2F]">{service.special}</p>
+                        <p className="text-2xl font-bold text-[#178E92]">{service.special}</p>
                       </div>
                     ) : (
-                      <p className="text-2xl font-bold text-[#D32F2F]">{service.price}</p>
+                      <p className="text-2xl font-bold text-[#178E92]">{service.price}</p>
                     )}
                   </div>
                 </div>
@@ -88,7 +89,7 @@ const Services = () => {
           {/* Cupping */}
           <div className="bg-white rounded-3xl shadow-lg p-8">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-2xl font-bold text-black">Cupping / Hijama</h3>
+              <h3 className="text-2xl font-bold text-[#0C3242]">Cupping / Hijama</h3>
               <img
                 src="https://images.unsplash.com/photo-1621287571777-c725d8e34d39?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTV8MHwxfHNlYXJjaHwzfHxjdXBwaW5nJTIwdGhlcmFweXxlbnwwfHx8fDE3NzA3NDczMTB8MA&ixlib=rb-4.1.0&q=85"
                 alt="Hijama Cupping"
@@ -99,11 +100,11 @@ const Services = () => {
               {cuppingServices.map((service, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#D32F2F] hover:shadow-md transition-all duration-200"
+                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#178E92] hover:shadow-md transition-all duration-200"
                 >
-                  <p className="text-lg font-bold text-black mb-2">{service.name}</p>
+                  <p className="text-lg font-bold text-[#0C3242] mb-2">{service.name}</p>
                   <p className="text-sm text-gray-600 mb-4 min-h-[40px]">{service.description}</p>
-                  <p className="text-2xl font-bold text-[#D32F2F]">{service.price}</p>
+                  <p className="text-2xl font-bold text-[#178E92]">{service.price}</p>
                 </div>
               ))}
             </div>
@@ -111,23 +112,23 @@ const Services = () => {
 
           {/* Taping */}
           <div className="bg-white rounded-3xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold text-black mb-6">Injury Taping / Strapping</h3>
+            <h3 className="text-2xl font-bold text-[#0C3242] mb-6">Injury Taping / Strapping</h3>
             <div className="grid md:grid-cols-2 gap-4">
               {tapingServices.map((service, index) => (
                 <div
                   key={index}
-                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#D32F2F] hover:shadow-md transition-all duration-200"
+                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#178E92] hover:shadow-md transition-all duration-200"
                 >
-                  <p className="text-lg font-bold text-black mb-2">{service.name}</p>
+                  <p className="text-lg font-bold text-[#0C3242] mb-2">{service.name}</p>
                   <p className="text-sm text-gray-600 mb-4">{service.description}</p>
-                  <p className="text-2xl font-bold text-[#D32F2F]">{service.price}</p>
+                  <p className="text-2xl font-bold text-[#178E92]">{service.price}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Combo Deal */}
-          <div className="bg-gradient-to-r from-[#D32F2F] to-[#B71C1C] rounded-3xl shadow-xl p-8 text-white">
+          <div className="bg-gradient-to-r from-[#136281] to-[#178E92] rounded-3xl shadow-xl p-8 text-white">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="mb-6 md:mb-0">
                 <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-semibold mb-3">
@@ -142,7 +143,7 @@ const Services = () => {
                   href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20the%20Combo%20Deal"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-white text-[#D32F2F] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200"
+                  className="inline-block bg-white text-[#136281] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-200"
                 >
                   Book Combo
                 </a>

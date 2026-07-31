@@ -7,18 +7,18 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
             About The FixSir
           </h2>
-          <p className="text-2xl text-[#D32F2F] font-semibold mb-2">
+          <p className="text-2xl text-[#178E92] font-semibold mb-2">
             Recharge. Recover. Reenergize.
           </p>
-          <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+          <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
 
         {/* Core Belief */}
         <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-gray-50 p-8 rounded-3xl border-l-4 border-[#D32F2F]">
+          <div className="bg-[#F2F6F8] p-8 rounded-3xl border-l-4 border-[#178E92]">
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               The FixSir was created with one core belief:
             </p>
@@ -45,8 +45,8 @@ const About = () => {
               />
             </div>
             {/* Hadith quotes */}
-            <div className="bg-gray-50 p-6 rounded-2xl border-l-4 border-[#D32F2F] relative mt-6 space-y-4">
-              <Quote className="absolute top-4 right-4 text-[#D32F2F] opacity-20" size={40} />
+            <div className="bg-[#F2F9F9] p-6 rounded-2xl border-l-4 border-[#178E92] relative mt-6 space-y-4">
+              <Quote className="absolute top-4 right-4 text-[#178E92] opacity-25" size={40} />
               <div>
                 <p className="text-lg font-semibold text-gray-800 italic mb-1">
                   "Indeed the best of remedies you have is cupping."
@@ -76,7 +76,7 @@ const About = () => {
             <p className="text-gray-700 leading-relaxed">
               Through structured rehabilitation, resilience, and faith, I gradually regained my strength and independence. Eventually, I returned to sport and physical activity at a level where it felt as though nothing had happened.
             </p>
-            <p className="text-[#D32F2F] font-semibold text-lg">Alhamdulillah.</p>
+            <p className="text-[#178E92] font-semibold text-lg">Alhamdulillah.</p>
             <p className="text-gray-700 leading-relaxed">
               That experience reshaped my purpose. Originally pursuing a path in commerce, I redirected my career toward sport science and recovery — driven by my gratitude towards every one of those heroes who helped me in my own personal journey, and a desire to help others regain, protect, and optimise their health.
             </p>
@@ -98,9 +98,9 @@ const About = () => {
               { icon: Target, title: 'Hijama Cupping', desc: 'Certified (Wet & Dry)' },
               { icon: CheckCircle, title: 'Injury Taping', desc: 'Qualified Practitioner' },
             ].map((qual, i) => (
-              <div key={i} className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-200 border border-gray-100 hover:border-[#D32F2F]">
-                <div className="bg-[#D32F2F]/10 p-3 rounded-lg inline-block mb-4">
-                  <qual.icon className="text-[#D32F2F]" size={28} />
+              <div key={i} className="bg-[#F2F6F8] rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-200 border border-gray-100 hover:border-[#178E92]">
+                <div className="bg-[#178E92]/10 p-3 rounded-lg inline-block mb-4">
+                  <qual.icon className="text-[#178E92]" size={28} />
                 </div>
                 <p className="font-bold text-black mb-1">{qual.title}</p>
                 <p className="text-sm text-gray-600">{qual.desc}</p>
@@ -112,8 +112,8 @@ const About = () => {
         {/* Who We Help + Worked With */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           <div className="bg-gray-50 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold text-black mb-6 flex items-center space-x-2">
-              <Users className="text-[#D32F2F]" size={28} />
+            <h3 className="text-2xl font-bold text-[#0C3242] mb-6 flex items-center space-x-2">
+              <Users className="text-[#136281]" size={28} />
               <span>Who We Help</span>
             </h3>
             <ul className="space-y-3">
@@ -125,15 +125,15 @@ const About = () => {
                 'Dealing with daily stress and tension',
               ].map((item, i) => (
                 <li key={i} className="flex items-start space-x-3">
-                  <ArrowRight className="text-[#D32F2F] flex-shrink-0 mt-1" size={16} />
+                  <ArrowRight className="text-[#136281] flex-shrink-0 mt-1" size={16} />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="bg-gray-50 rounded-3xl p-8">
-            <h3 className="text-2xl font-bold text-black mb-6 flex items-center space-x-2">
-              <Award className="text-[#D32F2F]" size={28} />
+            <h3 className="text-2xl font-bold text-[#0C3242] mb-6 flex items-center space-x-2">
+              <Award className="text-[#136281]" size={28} />
               <span>I Have Worked With</span>
             </h3>
             <ul className="space-y-3">
@@ -145,7 +145,7 @@ const About = () => {
                 'Sedentary individuals under chronic stress',
               ].map((item, i) => (
                 <li key={i} className="flex items-start space-x-3">
-                  <CheckCircle className="text-[#D32F2F] flex-shrink-0 mt-1" size={16} />
+                  <CheckCircle className="text-[#136281] flex-shrink-0 mt-1" size={16} />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}
@@ -157,7 +157,7 @@ const About = () => {
         </div>
 
         {/* Mission + CTA */}
-        <div className="bg-gradient-to-r from-[#D32F2F] to-[#B71C1C] rounded-3xl shadow-xl p-8 md:p-12 text-white text-center">
+        <div className="bg-gradient-to-r from-[#136281] to-[#178E92] rounded-3xl shadow-xl p-8 md:p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-6">Our Mission</h3>
           <div className="max-w-3xl mx-auto space-y-3 mb-8">
             <p className="text-xl text-white/90">To elevate recovery standards and perceptions.</p>
@@ -172,7 +172,7 @@ const About = () => {
               href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-[#D32F2F] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
+              className="inline-block bg-white text-[#136281] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-200 hover:shadow-lg"
             >
               Book Your Appointment Today
             </a>
@@ -182,19 +182,19 @@ const About = () => {
         {/* Trust badges */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
           <div className="bg-white p-4 rounded-xl border border-gray-200 text-center">
-            <p className="text-3xl font-bold text-[#D32F2F] mb-1">100s</p>
+            <p className="text-3xl font-bold text-[#178E92] mb-1">100s</p>
             <p className="text-sm text-gray-600">Clients Served</p>
           </div>
           <div className="bg-white p-4 rounded-xl border border-gray-200 text-center">
-            <p className="text-3xl font-bold text-[#D32F2F] mb-1">3+ Years</p>
+            <p className="text-3xl font-bold text-[#178E92] mb-1">3+ Years</p>
             <p className="text-sm text-gray-600">Experience</p>
           </div>
           <div className="bg-white p-4 rounded-xl border border-gray-200 text-center">
-            <p className="text-3xl font-bold text-[#D32F2F] mb-1">Mobile</p>
+            <p className="text-3xl font-bold text-[#178E92] mb-1">Mobile</p>
             <p className="text-sm text-gray-600">We Come to You</p>
           </div>
           <div className="bg-white p-4 rounded-xl border border-gray-200 text-center">
-            <p className="text-3xl font-bold text-[#D32F2F] mb-1">Certified</p>
+            <p className="text-3xl font-bold text-[#178E92] mb-1">Certified</p>
             <p className="text-sm text-gray-600">Professional Care</p>
           </div>
         </div>

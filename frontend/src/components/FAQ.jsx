@@ -48,13 +48,13 @@ const FAQ = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-600">
             Everything you need to know about our services
           </p>
-          <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+          <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
 
         {/* FAQ List */}
@@ -62,7 +62,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 hover:border-[#D32F2F] transition-all duration-200"
+              className="bg-[#F2F6F8] rounded-2xl overflow-hidden border border-gray-200 hover:border-[#178E92] transition-all duration-200"
             >
               <button
                 onClick={() => toggleFAQ(index)}
@@ -72,7 +72,7 @@ const FAQ = () => {
                   {faq.question}
                 </span>
                 {openIndex === index ? (
-                  <ChevronUp className="text-[#D32F2F] flex-shrink-0" size={24} />
+                  <ChevronUp className="text-[#178E92] flex-shrink-0" size={24} />
                 ) : (
                   <ChevronDown className="text-gray-400 flex-shrink-0" size={24} />
                 )}
@@ -88,7 +88,7 @@ const FAQ = () => {
 
         {/* Still have questions CTA */}
         <div className="mt-12 bg-gray-50 rounded-3xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-black mb-4">Still have questions?</h3>
+          <h3 className="text-2xl font-bold text-[#0C3242] mb-4">Still have questions?</h3>
           <p className="text-gray-600 mb-6">
             Feel free to reach out to us directly. We're happy to help!
           </p>
@@ -97,13 +97,13 @@ const FAQ = () => {
               href="https://wa.me/27648906906?text=Hi%2C%20I%20have%20a%20question"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#D32F2F] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#B71C1C] transition-all duration-200"
+              className="inline-block bg-[#136281] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#178E92] transition-all duration-200"
             >
               WhatsApp Us
             </a>
             <a
               href="tel:0648906906"
-              className="inline-block bg-white text-[#D32F2F] border-2 border-[#D32F2F] px-8 py-3 rounded-full font-semibold hover:bg-[#D32F2F] hover:text-white transition-all duration-200"
+              className="inline-block bg-white text-[#178E92] border-2 border-[#178E92] px-8 py-3 rounded-full font-semibold hover:bg-[#178E92] hover:text-white transition-all duration-200"
             >
               Call Now
             </a>

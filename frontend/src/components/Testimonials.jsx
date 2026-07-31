@@ -49,17 +49,18 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-20 bg-[#F2F9F9] overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 bg-honeycomb opacity-[0.07]" />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
             What Our Clients Say
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Real experiences from satisfied clients
           </p>
-          <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+          <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
 
         {/* Testimonials Carousel */}
@@ -76,7 +77,7 @@ const Testimonials = () => {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 p-4">
                   <div className="bg-white rounded-3xl shadow-lg p-8 h-full flex flex-col relative hover:shadow-xl transition-all duration-300">
-                    <Quote className="absolute top-6 right-6 text-[#D32F2F] opacity-20" size={40} />
+                    <Quote className="absolute top-6 right-6 text-[#178E92] opacity-25" size={40} />
 
                     {/* Rating */}
                     <div className="flex items-center space-x-1 mb-4">
@@ -95,7 +96,7 @@ const Testimonials = () => {
                       <p className="font-bold text-black">{testimonial.name}</p>
                       <p className="text-sm text-gray-600">{testimonial.location}</p>
                       <div className="mt-2">
-                        <span className="inline-block bg-[#D32F2F]/10 text-[#D32F2F] px-3 py-1 rounded-full text-xs font-semibold">
+                        <span className="inline-block bg-[#178E92]/10 text-[#178E92] px-3 py-1 rounded-full text-xs font-semibold">
                           {testimonial.service}
                         </span>
                       </div>
@@ -118,7 +119,7 @@ const Testimonials = () => {
             href="https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#D32F2F] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#B71C1C] transition-all duration-200 hover:shadow-xl"
+            className="inline-block bg-[#136281] text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-[#178E92] transition-all duration-200 hover:shadow-xl"
           >
             Book Your Appointment
           </a>

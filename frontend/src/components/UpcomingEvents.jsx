@@ -44,17 +44,17 @@ const UpcomingEvents = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             August / Safar preferred cupping dates - dependent on moon sighting
           </p>
-          <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+          <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
 
         {/* Location Banner */}
-        <div className="bg-[#D32F2F] text-white rounded-3xl p-8 mb-12 text-center">
+        <div className="bg-gradient-to-r from-[#136281] to-[#178E92] text-white rounded-3xl p-8 mb-12 text-center">
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
             <div className="flex items-center space-x-3">
               <MapPin size={32} />
@@ -77,16 +77,16 @@ const UpcomingEvents = () => {
         </div>
 
         {/* Sunnah Hijama Dates Calendar */}
-        <div className="bg-gradient-to-br from-[#D32F2F] to-[#B71C1C] rounded-3xl shadow-xl overflow-hidden mb-12">
-          <div className="max-w-2xl mx-auto px-6 py-10 sm:px-10 sm:py-12 text-white">
+        <div className="relative bg-gradient-to-br from-[#136281] via-[#11526D] to-[#0E4249] rounded-3xl shadow-xl overflow-hidden mb-12">
+          <div className="pointer-events-none absolute inset-0 bg-honeycomb-invert opacity-[0.10]" />
+          <div className="relative max-w-2xl mx-auto px-6 py-10 sm:px-10 sm:py-12 text-white">
             {/* Brand */}
-            <div className="flex items-center justify-center space-x-3 mb-6">
+            <div className="flex justify-center mb-7">
               <img
-                src="https://customer-assets.emergentagent.com/job_e6936146-32b4-41d1-9215-4616bacb2820/artifacts/311cz3q0_PHOTO-2026-02-10-19-55-21.jpg"
-                alt="TheFixSir"
-                className="w-12 h-12 rounded-full object-cover bg-white"
+                src="/brand/logo-copyline-whiteteal.png"
+                alt="FixSir — The Science of Movement"
+                className="h-14 w-auto"
               />
-              <span className="text-3xl font-bold tracking-tight">TheFixSir</span>
             </div>
 
             <h3 className="text-center text-3xl sm:text-4xl font-extrabold uppercase tracking-tight mb-8">
@@ -94,9 +94,9 @@ const UpcomingEvents = () => {
             </h3>
 
             {/* Calendar */}
-            <div className="bg-[#F7ECEC] text-[#1B2A4A] rounded-2xl border-2 border-[#1B2A4A]/80 p-4 sm:p-6">
-              <div className="flex items-end justify-between border-b-2 border-[#1B2A4A] pb-3 mb-4">
-                <span className="bg-[#F0B9B9] text-[#1B2A4A] text-2xl sm:text-3xl font-bold px-4 py-1 rounded-lg">
+            <div className="bg-[#F2F6F8] text-[#0C3242] rounded-2xl border-2 border-[#0C3242]/25 p-4 sm:p-6 shadow-lg">
+              <div className="flex items-end justify-between border-b-2 border-[#136281] pb-3 mb-4">
+                <span className="bg-[#C3E2E3] text-[#0E4249] text-2xl sm:text-3xl font-bold px-4 py-1 rounded-lg">
                   2026
                 </span>
                 <span className="text-2xl sm:text-3xl font-bold tracking-wide">AUGUST</span>
@@ -104,18 +104,18 @@ const UpcomingEvents = () => {
 
               <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">
                 {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((d) => (
-                  <div key={d} className="text-[10px] sm:text-xs font-bold text-[#D32F2F] pb-1">
+                  <div key={d} className="text-[10px] sm:text-xs font-bold text-[#178E92] pb-1">
                     {d}
                   </div>
                 ))}
                 {calendarCells.map((day, i) => (
                   <div
                     key={i}
-                    className={`aspect-square flex items-center justify-center rounded-md ${day ? 'bg-white/70' : ''}`}
+                    className={`aspect-square flex items-center justify-center rounded-md ${day ? 'bg-white/80' : ''}`}
                   >
                     {day && (
                       <span
-                        className={`flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 text-sm sm:text-lg font-bold rounded-full ${sunnahDays.includes(day) ? 'ring-2 ring-[#D32F2F] text-[#D32F2F]' : ''
+                        className={`flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 text-sm sm:text-lg font-bold rounded-full ${sunnahDays.includes(day) ? 'ring-2 ring-[#178E92] bg-[#178E92]/10 text-[#0E4249]' : ''
                           }`}
                       >
                         {day}
@@ -141,21 +141,21 @@ const UpcomingEvents = () => {
           {events.map((event, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${event.featured ? 'ring-4 ring-[#D32F2F]' : ''
+              className={`relative bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 ${event.featured ? 'ring-4 ring-[#178E92]' : ''
                 }`}
             >
               {event.featured && (
-                <div className="absolute top-0 right-0 bg-[#D32F2F] text-white px-6 py-2 rounded-bl-2xl font-semibold text-sm">
+                <div className="absolute top-0 right-0 bg-[#178E92] text-white px-6 py-2 rounded-bl-2xl font-semibold text-sm">
                   FEATURED
                 </div>
               )}
 
               <div className="p-8">
                 {/* Date Header */}
-                <div className="bg-gray-50 rounded-2xl p-6 mb-6 text-center">
+                <div className="bg-[#F2F6F8] rounded-2xl p-6 mb-6 text-center">
                   <div className="flex items-center justify-center space-x-2 mb-2">
-                    <Calendar className="text-[#D32F2F]" size={24} />
-                    <p className="text-3xl font-bold text-black">{event.date}</p>
+                    <Calendar className="text-[#136281]" size={24} />
+                    <p className="text-3xl font-bold text-[#0C3242]">{event.date}</p>
                   </div>
                   <p className="text-gray-600 font-medium">{event.islamicDate}</p>
                   <p className="text-sm text-gray-500 mt-1">{event.day}</p>
@@ -164,16 +164,16 @@ const UpcomingEvents = () => {
                 {/* Service Details */}
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <Droplet className="text-[#D32F2F] flex-shrink-0 mt-1" size={20} />
+                    <Droplet className="text-[#136281] flex-shrink-0 mt-1" size={20} />
                     <div>
-                      <p className="font-semibold text-black">{event.service}</p>
+                      <p className="font-semibold text-[#0C3242]">{event.service}</p>
                       <p className="text-sm text-gray-600">{event.cups}</p>
                     </div>
                   </div>
 
-                  <div className="bg-[#D32F2F]/10 rounded-xl p-4">
+                  <div className="bg-[#178E92]/10 rounded-xl p-4">
                     <p className="text-sm text-gray-600 mb-1">Price per person</p>
-                    <p className="text-2xl font-bold text-[#D32F2F]">{event.price}</p>
+                    <p className="text-2xl font-bold text-[#178E92]">{event.price}</p>
                   </div>
 
                   <div className="flex items-center space-x-2 text-sm text-amber-600 bg-amber-50 p-3 rounded-lg">
@@ -187,7 +187,7 @@ const UpcomingEvents = () => {
                   href={`https://wa.me/27648906906?text=Hi%2C%20I%27d%20like%20to%20book%20Hijama%20on%20${event.date}%20(${event.islamicDate})`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 w-full block text-center bg-[#D32F2F] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#B71C1C] transition-all duration-200"
+                  className="mt-6 w-full block text-center bg-[#136281] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#178E92] transition-all duration-200"
                 >
                   Book This Date
                 </a>
@@ -197,10 +197,10 @@ const UpcomingEvents = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="mt-12 bg-gray-50 rounded-3xl p-8">
+        <div className="mt-12 bg-[#F2F9F9] rounded-3xl p-8">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-black mb-4">Book Your Slot Now</h3>
+              <h3 className="text-2xl font-bold text-[#0C3242] mb-4">Book Your Slot Now</h3>
               <p className="text-gray-600 mb-6">
                 Limited slots available for each date. Contact us early to secure your appointment.
               </p>
@@ -210,24 +210,24 @@ const UpcomingEvents = () => {
                 href="tel:0648906906"
                 className="flex items-center space-x-4 bg-white p-4 rounded-xl hover:shadow-md transition-all duration-200"
               >
-                <div className="p-3 bg-[#D32F2F]/10 rounded-lg">
-                  <Phone className="text-[#D32F2F]" size={24} />
+                <div className="p-3 bg-[#136281]/10 rounded-lg">
+                  <Phone className="text-[#136281]" size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Males</p>
-                  <p className="text-lg font-bold text-black">064 890 6906</p>
+                  <p className="text-lg font-bold text-[#0C3242]">064 890 6906</p>
                 </div>
               </a>
               <a
                 href="tel:0828827865"
                 className="flex items-center space-x-4 bg-white p-4 rounded-xl hover:shadow-md transition-all duration-200"
               >
-                <div className="p-3 bg-[#D32F2F]/10 rounded-lg">
-                  <Phone className="text-[#D32F2F]" size={24} />
+                <div className="p-3 bg-[#136281]/10 rounded-lg">
+                  <Phone className="text-[#136281]" size={24} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Females (Referrals)</p>
-                  <p className="text-lg font-bold text-black">082 882 7865</p>
+                  <p className="text-lg font-bold text-[#0C3242]">082 882 7865</p>
                 </div>
               </a>
             </div>

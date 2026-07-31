@@ -99,13 +99,13 @@ const Experience = () => {
         <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl lg:text-5xl font-bold text-black mb-4">
+                    <h2 className="text-4xl lg:text-5xl font-bold text-[#0C3242] mb-4">
                         Trusted By Champions
                     </h2>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         Proud to have worked with top athletes and organizations
                     </p>
-                    <div className="w-20 h-1 bg-[#D32F2F] mx-auto mt-6"></div>
+                    <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -114,9 +114,9 @@ const Experience = () => {
                         return (
                             <div
                                 key={index}
-                                className="bg-gray-50 rounded-xl p-6 flex items-center space-x-4 hover:shadow-lg transition-all duration-200 border border-gray-100 hover:border-[#D32F2F]"
+                                className="bg-[#F2F6F8] rounded-xl p-6 flex items-center space-x-4 hover:shadow-lg transition-all duration-200 border border-gray-100 hover:border-[#178E92]"
                             >
-                                <div className="bg-[#D32F2F]/10 p-2 rounded-lg text-[#D32F2F] flex-shrink-0">
+                                <div className="bg-[#178E92]/10 p-2 rounded-lg text-[#178E92] flex-shrink-0">
                                     <Icon size={24} />
                                 </div>
                                 <p className="font-semibold text-gray-800">{item.text}</p>

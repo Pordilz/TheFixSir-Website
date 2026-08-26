@@ -4,27 +4,27 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '1 August',
-      islamicDate: '17th Safar',
-      day: 'Saturday',
+      date: '30 August',
+      islamicDate: '17th Rabi al-Awwal',
+      day: 'Sunday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
     },
     {
-      date: '3 August',
-      islamicDate: '19th Safar',
-      day: 'Monday',
+      date: '1 September',
+      islamicDate: '19th Rabi al-Awwal',
+      day: 'Tuesday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
     {
-      date: '5 August',
-      islamicDate: '21st Safar',
-      day: 'Wednesday',
+      date: '3 September',
+      islamicDate: '21st Rabi al-Awwal',
+      day: 'Thursday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
@@ -32,12 +32,32 @@ const UpcomingEvents = () => {
     },
   ];
 
-  // Sunnah Hijama calendar — August 2026 starts on a Saturday (6 leading blanks).
-  const sunnahDays = [1, 3, 5];
-  const calendarCells = [
-    ...Array(6).fill(null),
-    ...Array.from({ length: 31 }, (_, i) => i + 1),
+  // The cycle runs across two months, so the calendar shows the tail of August
+  // followed by September. 30 Aug 2026 is a Sunday; September starts on a
+  // Tuesday (2 leading blanks).
+  const augustSunnah = [30];
+  const augustCells = [30, 31, null, null, null, null, null];
+  const septemberSunnah = [1, 3];
+  const septemberCells = [
+    ...Array(2).fill(null),
+    ...Array.from({ length: 30 }, (_, i) => i + 1),
   ];
+
+  const dayCell = (day, key, highlight) => (
+    <div
+      key={key}
+      className={`aspect-square flex items-center justify-center rounded-md ${day ? 'bg-white/80' : ''}`}
+    >
+      {day && (
+        <span
+          className={`flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 text-sm sm:text-lg font-bold rounded-full ${highlight ? 'ring-2 ring-[#178E92] bg-[#178E92]/10 text-[#0E4249]' : ''
+            }`}
+        >
+          {day}
+        </span>
+      )}
+    </div>
+  );
 
   return (
     <section id="events" className="py-20 bg-white">
@@ -48,7 +68,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            August / Safar preferred cupping dates - dependent on moon sighting
+            August / September - Rabi al-Awwal preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
@@ -93,36 +113,34 @@ const UpcomingEvents = () => {
               Sunnah Hijama Dates
             </h3>
 
-            {/* Calendar */}
+            {/* Calendar — the cycle spans the end of August into September */}
             <div className="bg-[#F2F6F8] text-[#0C3242] rounded-2xl border-2 border-[#0C3242]/25 p-4 sm:p-6 shadow-lg">
+              {/* August tail */}
+              <div className="flex items-end justify-end border-b-2 border-[#136281]/40 pb-2 mb-3">
+                <span className="text-lg sm:text-xl font-bold tracking-wide text-[#136281]">AUGUST</span>
+              </div>
+              <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center mb-7">
+                {augustCells.map((day, i) =>
+                  dayCell(day, `aug-${i}`, augustSunnah.includes(day))
+                )}
+              </div>
+
+              {/* September */}
               <div className="flex items-end justify-between border-b-2 border-[#136281] pb-3 mb-4">
                 <span className="bg-[#C3E2E3] text-[#0E4249] text-2xl sm:text-3xl font-bold px-4 py-1 rounded-lg">
                   2026
                 </span>
-                <span className="text-2xl sm:text-3xl font-bold tracking-wide">AUGUST</span>
+                <span className="text-2xl sm:text-3xl font-bold tracking-wide">SEPTEMBER</span>
               </div>
-
               <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">
                 {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((d) => (
                   <div key={d} className="text-[10px] sm:text-xs font-bold text-[#178E92] pb-1">
                     {d}
                   </div>
                 ))}
-                {calendarCells.map((day, i) => (
-                  <div
-                    key={i}
-                    className={`aspect-square flex items-center justify-center rounded-md ${day ? 'bg-white/80' : ''}`}
-                  >
-                    {day && (
-                      <span
-                        className={`flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 text-sm sm:text-lg font-bold rounded-full ${sunnahDays.includes(day) ? 'ring-2 ring-[#178E92] bg-[#178E92]/10 text-[#0E4249]' : ''
-                          }`}
-                      >
-                        {day}
-                      </span>
-                    )}
-                  </div>
-                ))}
+                {septemberCells.map((day, i) =>
+                  dayCell(day, `sep-${i}`, septemberSunnah.includes(day))
+                )}
               </div>
             </div>
 

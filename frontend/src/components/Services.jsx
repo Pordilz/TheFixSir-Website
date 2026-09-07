@@ -25,6 +25,14 @@ const Services = () => {
     { name: 'Rigid Taping', description: 'Injury site/tape quantity dependent', price: 'R100-R250' },
   ];
 
+  const exercisePlanServices = [
+    {
+      name: 'Exercise Plan',
+      description: 'Personalised programme tailored to your goals',
+      price: 'From R200',
+    },
+  ];
+
   const comboDeal = {
     name: '1 Hour Sports Massage + Sunnah/Hijama Cupping',
     description: 'Up to 8 cups',
@@ -122,6 +130,27 @@ const Services = () => {
                   <p className="text-lg font-bold text-[#0C3242] mb-2">{service.name}</p>
                   <p className="text-sm text-gray-600 mb-4">{service.description}</p>
                   <p className="text-2xl font-bold text-[#178E92]">{service.price}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Exercise Plans */}
+          <div className="bg-white rounded-3xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold text-[#0C3242] mb-6">Exercise Plans</h3>
+            <div className="grid gap-4">
+              {exercisePlanServices.map((service, index) => (
+                <div
+                  key={index}
+                  className="border border-gray-200 rounded-2xl p-6 hover:border-[#178E92] hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+                >
+                  <div>
+                    <p className="text-lg font-bold text-[#0C3242] mb-2">{service.name}</p>
+                    <p className="text-sm text-gray-600">{service.description}</p>
+                  </div>
+                  <p className="text-2xl font-bold text-[#178E92] sm:text-right sm:pl-6 whitespace-nowrap">
+                    {service.price}
+                  </p>
                 </div>
               ))}
             </div>

@@ -156,6 +156,15 @@ const Services = () => {
             </div>
           </div>
 
+          {/* Limited Time Special */}
+          <div className="bg-[#E4F0F2] rounded-3xl shadow-xl p-6 md:p-8 flex justify-center border-2 border-[#178E92]">
+            <img 
+              src="/images/wet-cupping-special.jpg" 
+              alt="Limited Wet Cupping Special - Bring a friend and receive R100 off!" 
+              className="max-w-full md:max-w-2xl h-auto rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300"
+            />
+          </div>
+
           {/* Combo Deal */}
           <div className="bg-gradient-to-r from-[#136281] to-[#178E92] rounded-3xl shadow-xl p-8 text-white">
             <div className="flex flex-col md:flex-row items-center justify-between">

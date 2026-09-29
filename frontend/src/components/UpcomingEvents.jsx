@@ -4,27 +4,27 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '30 August',
-      islamicDate: '17th Rabi al-Awwal',
-      day: 'Sunday',
+      date: '29 September',
+      islamicDate: '17th Rabi al-Thani',
+      day: 'Tuesday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
     },
     {
-      date: '1 September',
-      islamicDate: '19th Rabi al-Awwal',
-      day: 'Tuesday',
+      date: '1 October',
+      islamicDate: '19th Rabi al-Thani',
+      day: 'Thursday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
     {
-      date: '3 September',
-      islamicDate: '21st Rabi al-Awwal',
-      day: 'Thursday',
+      date: '3 October',
+      islamicDate: '21st Rabi al-Thani',
+      day: 'Saturday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
@@ -32,16 +32,26 @@ const UpcomingEvents = () => {
     },
   ];
 
-  // The cycle runs across two months, so the calendar shows the tail of August
-  // followed by September. 30 Aug 2026 is a Sunday; September starts on a
-  // Tuesday (2 leading blanks).
-  const augustSunnah = [30];
-  const augustCells = [30, 31, null, null, null, null, null];
-  const septemberSunnah = [1, 3];
-  const septemberCells = [
-    ...Array(2).fill(null),
-    ...Array.from({ length: 30 }, (_, i) => i + 1),
-  ];
+  // Sunnah dates fall on the 17th / 19th / 21st of the lunar month, which
+  // usually straddles two Gregorian months. To roll the calendar forward each
+  // cycle, only these two blocks need changing.
+  const tailMonth = {
+    label: 'SEPTEMBER',
+    sunnah: [29],
+    // 27 Sep 2026 is a Sunday, so the tail row starts in the SUN column.
+    cells: [27, 28, 29, 30, null, null, null],
+  };
+
+  const mainMonth = {
+    label: 'OCTOBER',
+    year: 2026,
+    sunnah: [1, 3],
+    cells: [
+      // 1 Oct 2026 falls on a Thursday -> 4 leading blanks.
+      ...Array(4).fill(null),
+      ...Array.from({ length: 31 }, (_, i) => i + 1),
+    ],
+  };
 
   const dayCell = (day, key, highlight) => (
     <div
@@ -68,7 +78,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            August / September - Rabi al-Awwal preferred cupping dates - dependent on moon sighting
+            September / October - Rabi al-Thani preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
@@ -113,24 +123,24 @@ const UpcomingEvents = () => {
               Sunnah Hijama Dates
             </h3>
 
-            {/* Calendar — the cycle spans the end of August into September */}
+            {/* Calendar — the cycle spans the tail of one month into the next */}
             <div className="bg-[#F2F6F8] text-[#0C3242] rounded-2xl border-2 border-[#0C3242]/25 p-4 sm:p-6 shadow-lg">
-              {/* August tail */}
+              {/* Previous-month tail */}
               <div className="flex items-end justify-end border-b-2 border-[#136281]/40 pb-2 mb-3">
-                <span className="text-lg sm:text-xl font-bold tracking-wide text-[#136281]">AUGUST</span>
+                <span className="text-lg sm:text-xl font-bold tracking-wide text-[#136281]">{tailMonth.label}</span>
               </div>
               <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center mb-7">
-                {augustCells.map((day, i) =>
-                  dayCell(day, `aug-${i}`, augustSunnah.includes(day))
+                {tailMonth.cells.map((day, i) =>
+                  dayCell(day, `tail-${i}`, tailMonth.sunnah.includes(day))
                 )}
               </div>
 
-              {/* September */}
+              {/* Main month */}
               <div className="flex items-end justify-between border-b-2 border-[#136281] pb-3 mb-4">
                 <span className="bg-[#C3E2E3] text-[#0E4249] text-2xl sm:text-3xl font-bold px-4 py-1 rounded-lg">
-                  2026
+                  {mainMonth.year}
                 </span>
-                <span className="text-2xl sm:text-3xl font-bold tracking-wide">SEPTEMBER</span>
+                <span className="text-2xl sm:text-3xl font-bold tracking-wide">{mainMonth.label}</span>
               </div>
               <div className="grid grid-cols-7 gap-1 sm:gap-1.5 text-center">
                 {['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'].map((d) => (
@@ -138,8 +148,8 @@ const UpcomingEvents = () => {
                     {d}
                   </div>
                 ))}
-                {septemberCells.map((day, i) =>
-                  dayCell(day, `sep-${i}`, septemberSunnah.includes(day))
+                {mainMonth.cells.map((day, i) =>
+                  dayCell(day, `main-${i}`, mainMonth.sunnah.includes(day))
                 )}
               </div>
             </div>

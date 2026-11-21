@@ -4,27 +4,27 @@ import { Calendar, MapPin, Clock, Phone, Droplet } from 'lucide-react';
 const UpcomingEvents = () => {
   const events = [
     {
-      date: '29 September',
-      islamicDate: '17th Rabi al-Thani',
-      day: 'Tuesday',
+      date: '27 November',
+      islamicDate: '17th Jumada al-Thani',
+      day: 'Friday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: true,
     },
     {
-      date: '1 October',
-      islamicDate: '19th Rabi al-Thani',
-      day: 'Thursday',
+      date: '29 November',
+      islamicDate: '19th Jumada al-Thani',
+      day: 'Sunday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
       featured: false,
     },
     {
-      date: '3 October',
-      islamicDate: '21st Rabi al-Thani',
-      day: 'Saturday',
+      date: '1 December',
+      islamicDate: '21st Jumada al-Thani',
+      day: 'Tuesday',
       service: 'Hijama/Sunnah Dates',
       price: 'R350-R400',
       cups: '8 cups max',
@@ -36,19 +36,20 @@ const UpcomingEvents = () => {
   // usually straddles two Gregorian months. To roll the calendar forward each
   // cycle, only these two blocks need changing.
   const tailMonth = {
-    label: 'SEPTEMBER',
-    sunnah: [29],
-    // 27 Sep 2026 is a Sunday, so the tail row starts in the SUN column.
-    cells: [27, 28, 29, 30, null, null, null],
+    label: 'NOVEMBER',
+    sunnah: [27, 29],
+    // 22 Nov 2026 is a Sunday, so the tail starts in the SUN column and wraps
+    // to a second row for 29-30.
+    cells: [22, 23, 24, 25, 26, 27, 28, 29, 30, null, null, null, null, null],
   };
 
   const mainMonth = {
-    label: 'OCTOBER',
+    label: 'DECEMBER',
     year: 2026,
-    sunnah: [1, 3],
+    sunnah: [1],
     cells: [
-      // 1 Oct 2026 falls on a Thursday -> 4 leading blanks.
-      ...Array(4).fill(null),
+      // 1 Dec 2026 falls on a Tuesday -> 2 leading blanks.
+      ...Array(2).fill(null),
       ...Array.from({ length: 31 }, (_, i) => i + 1),
     ],
   };
@@ -78,7 +79,7 @@ const UpcomingEvents = () => {
             Upcoming Events
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            September / October - Rabi al-Thani preferred cupping dates - dependent on moon sighting
+            November / December - Jumada al-Thani preferred cupping dates - dependent on moon sighting
           </p>
           <div className="w-20 h-1 brand-rule rounded-full mx-auto mt-6"></div>
         </div>
